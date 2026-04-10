@@ -1,26 +1,25 @@
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=23483272&assignment_repo_type=AssignmentRepo)
-# Título do Projeto
+# Projeto Resgate
 
 `CURSO: Sistemas de Informação`
 
 `DISCIPLINA: Projeto - Aplicações Web`
 
 `SEMESTRE: 1º`
-
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+O projeto resgate tem o intuito de juntar pessoas que desejam se voluntariar a projetos que necessitem de voluntarios 
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
-* Nome completo do aluno 5
+* Caio Gabriel Oliveira Fonseca
+* Daniel Vitor Leite Itabirano
+* Luís Eduardo da Silva Monteiro
+* Mateus de Freitas Resende Noronha Xavier
+
 
 
 ## Orientador
 
-* Nome completo do professor 1
+* Caroline Rhaian da Silva Jandre
 
 # Planejamento
 
