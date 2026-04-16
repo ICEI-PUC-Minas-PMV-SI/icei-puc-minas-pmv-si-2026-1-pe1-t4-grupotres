@@ -1,36 +1,60 @@
 
 # Projeto de Interface
 
-Visão geral da interação do usuário pelas telas do sistema e protótipo interativo das telas com as funcionalidades que fazem parte do sistema (wireframes).
+O projeto de interface está organizado em 9 páginas, sendo elas: Landing Page institucional, tela de cadastro e login, home do usuário voluntário, explorar projetos, detalhes do projeto, meus projetos, perfil do voluntário, painel da instituição e análise de candidatos. As páginas foram desenvolvidas de modo que tanto voluntários quanto instituições possam interagir com a plataforma de forma intuitiva, permitindo a busca e candidatura a projetos sociais, gerenciamento e a análise de perfis, sendo a interface adaptável a diferentes dispositivos como navegador, smartphone ou tablet.
 
 ## User Flow
 
 ![Exemplo de UserFlow](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/icei-puc-minas-pmv-si-2026-1-pe1-t4-grupotres/main/docs/img/User%20flow/User-Flow-Projeto-Resgate.jpg)
 
-Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapear todo fluxo de telas do site ou app. Essa técnica funciona para alinhar os caminhos e as possíveis ações que o usuário pode fazer junto com os membros de sua equipe.
-
-> **Links Úteis**:
-> - [User Flow: O Quê É e Como Fazer?](https://medium.com/7bits/fluxo-de-usu%C3%A1rio-user-flow-o-que-%C3%A9-como-fazer-79d965872534)
-> - [User Flow vs Site Maps](http://designr.com.br/sitemap-e-user-flow-quais-as-diferencas-e-quando-usar-cada-um/)
-> - [Top 25 User Flow Tools & Templates for Smooth](https://www.mockplus.com/blog/post/user-flow-tools)
-
-
 ## Wireframes
 
-São protótipos usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante do layout de elementos fundamentais na interface e é fundamental sempre relacionar cada wireframe com o(s) requisito(s) que ele atende.
+### 1 - Landing Page Institucional
 
-### Exemplo
+Nesta tela é apresentada a página inicial do site, onde o usuário poderá conhecer a plataforma, entender sua proposta de conectar voluntários a instituições e acessar as opções de login e cadastro.
+Mostrar Imagem
 
-A tela inicial apresenta um menu lateral com as principais seções do portal, enquanto a navigation bar, ao topo, apresenta informações de envio de imagens ou navegação pela galeria de fotos. A área central apresenta a galeria de fotos na forma de uma grade. Nesta tela, são apresentados os seguintes requisitos
 
-![Exemplo de Wireframe](img/wireframe-example.png)
+### 2 - Tela de Cadastro e Login
 
- 
-> **Links Úteis**:
-> - [Protótipos vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
-> - [Ferramentas de Wireframes](https://rockcontent.com/blog/wireframes/)
-> - [MarvelApp](https://marvelapp.com/developers/documentation/tutorials/)
-> - [Figma](https://www.figma.com/)
-> - [Adobe XD](https://www.adobe.com/br/products/xd.html#scroll)
-> - [Axure](https://www.axure.com/edu) (Licença Educacional)
-> - [InvisionApp](https://www.invisionapp.com/) (Licença Educacional)
+Nessa tela, o usuário poderá efetuar seu login com e-mail, senha, Google ou Facebook, alternar entre os perfis de Voluntário e Instituição, e caso seja novo, criar uma conta gratuitamente.
+Mostrar Imagem
+
+
+### 3 - Home do Usuário
+
+Nessa tela o sistema apresenta ao voluntário suas oportunidades recomendadas, projetos em andamento, ações rápidas, projetos visualizados recentemente e um resumo de suas estatísticas de participação.
+Mostrar Imagem
+
+
+### 4 - Explorar Projetos
+
+Nessa página o usuário poderá buscar e filtrar projetos por localização, área de atuação, tipo de atividade, habilidades, disponibilidade e formato, visualizando sugestões personalizadas com base em seu perfil.
+Mostrar Imagem
+
+
+### 5 - Detalhes do Projeto
+
+Nessa tela o usuário visualiza todas as informações de um projeto, como descrição completa, atividades planejadas, perfil do voluntário desejado, habilidades, disponibilidade, vagas, datas importantes e projetos relacionados.
+Mostrar Imagem
+
+### 6 - Meus Projetos
+Nessa tela o voluntário poderá acompanhar todos os projetos em que participa, visualizando o status de cada um (em andamento, aguardando início, recusado ou concluído), além de acessar os detalhes e entrar em contato com a instituição responsável.
+
+
+### 7 - Perfil do Voluntário
+Nessa página o usuário poderá visualizar e editar seus dados cadastrais, biografia, áreas de interesse, habilidades, disponibilidade, causas preferidas e histórico de projetos participados.
+Mostrar Imagem
+
+
+### 8 - Painel da Instituição
+
+Nessa tela a instituição poderá gerenciar seu perfil, visualizar estatísticas dos projetos ativos, criar novos projetos e acompanhar o status de cada iniciativa vinculada à organização.
+Mostrar Imagem
+
+
+### 9 - Análise de Candidatos
+
+Nessa página a instituição poderá visualizar os dados cadastrais completos dos voluntários candidatos a seus projetos, incluindo biografia, áreas de interesse, habilidades e disponibilidade, podendo aprovar ou recusar cada candidatura.
+Mostrar Imagem
+
