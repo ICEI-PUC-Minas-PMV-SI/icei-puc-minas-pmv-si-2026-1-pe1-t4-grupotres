@@ -1,36 +1,82 @@
-# Template padrão do site
+## Template padrão do site
 
 Layout padrão do site (HTML e CSS) que será utilizado em todas as páginas com a definição de identidade visual, aspectos de responsividade e iconografia.
 
-Explique as guias de estilo utilizadas no seu projeto.
+### Design
 
-## Design
+O layout do Projeto Resgate segue uma estrutura padrão composta por:
 
-Detalhe os layouts que serão utilizados. Apresente onde será colocado o logo do sistema. Defina os menus padrões, entre outras coisas.
+- **Header:** contém o logotipo do sistema no canto superior esquerdo, barra de busca central, ícones de notificação e mensagens, e o perfil do usuário no canto superior direito.
+- **Menu lateral (sidebar):** presente nas telas internas, com links de navegação para Início, Explorar Projetos, Meus Projetos, Meu Perfil, Mensagens, Notificações e Configurações.
+- **Área de conteúdo principal:** ocupa o restante da tela e varia conforme a página acessada.
+- **Logo:** posicionado no canto superior esquerdo em todas as páginas, composto pelo ícone de duas mãos entrelaçadas seguido do texto "Projeto Resgate".
 
+O layout é responsivo e se adapta a navegadores, smartphones e tablets.
 
-## Cores
+---
 
-Apresente a paleta de cores que será utilizada. Uma ferramenta interessante para a criação de palestas de cores é o *Adobe Color* ([https://color.adobe.com/pt/create/color-wheel](https://color.adobe.com/pt/create/color-wheel)).
+### Cores
 
+A paleta de cores do Projeto Resgate transmite confiança, acolhimento e ação social:
 
-## Tipografia
+| Cor | Hex | Uso |
+|---|---|---|
+| Azul principal | `#1A56DB` | Botões primários, links, destaques |
+| Azul escuro | `#1E3A5F` | Header, sidebar ativa |
+| Verde | `#057A55` | Status "Em andamento", tags positivas |
+| Laranja | `#FF8C00` | Status "Aguardando início", alertas |
+| Vermelho | `#E02424` | Status "Recusado", ações destrutivas |
+| Cinza claro | `#F9FAFB` | Fundo das páginas |
+| Cinza médio | `#6B7280` | Textos secundários |
+| Branco | `#FFFFFF` | Cards, modais, formulários |
 
-Apresente as fontes que serão utilizadas e sua função no site. As principais funções são: Título de página, Título de Seção, Rótulos de componentes e Corpo de Texto.
+---
 
+### Tipografia
 
-## Iconografia
+A fonte utilizada no projeto é a **Inter**, disponível no Google Fonts, por ser moderna, legível e amplamente utilizada em interfaces digitais.
 
-Defina os ícones que serão utilizados e suas respectivas funções.
+/* Título de Página */
+h1 {
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  font-weight: 700; /* Bold */
+  color: #1E3A5F;
+}
 
-Apresente os estilos CSS criados para cada um dos elementos apresentados.
-Outras seções podem ser adicionadas neste documento para apresentar padrões de componentes, de menus, etc.
+/* Título de Seção */
+h2 {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 600; /* Semibold */
+  color: #1E3A5F;
+}
 
+/* Textos UI */
+label, .rotulo {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 500; /* Medium */
+  color: #1E3A5F;
+}
 
-> **Links Úteis**:
->
-> -  [Como criar um guia de estilo de design da Web](https://edrodrigues.com.br/blog/como-criar-um-guia-de-estilo-de-design-da-web/#)
-> - [CSS Website Layout (W3Schools)](https://www.w3schools.com/css/css_website_layout.asp)
-> - [Website Page Layouts](http://www.cellbiol.com/bioinformatics_web_development/chapter-3-your-first-web-page-learning-html-and-css/website-page-layouts/)
-> - [Perfect Liquid Layout](https://matthewjamestaylor.com/perfect-liquid-layouts)
-> - [How and Why Icons Improve Your Web Design](https://usabilla.com/blog/how-and-why-icons-improve-you-web-design/)
+/* Corpo de Texto */
+p, body {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 400; /* Regular */
+  color: #1E3A5F;
+}
+
+/* Texto Secundário */
+.texto-secundario, span, small {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 400; /* Regular */
+  color: #6B7280;
+}
+---
+
+### Iconografia
+
+Os ícones utilizados no Projeto Resgate são do conjunto **Heroicons** (outline), mantendo consistência visual em toda a interface:
