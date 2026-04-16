@@ -14,6 +14,7 @@ O projeto de interface está organizado em 9 páginas, sendo elas: Landing Page 
 Nesta tela é apresentada a página inicial do site, onde o usuário poderá conhecer a plataforma, entender sua proposta de conectar voluntários a instituições e acessar as opções de login e cadastro.
 Mostrar Imagem
 
+![Landing Page Institucional](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/icei-puc-minas-pmv-si-2026-1-pe1-t4-grupotres/main/docs/img/Wireframes/Projeto%20Resgate%20_%20Wireframes%20(Landing%20Page%20Institucional).jpg)
 
 ### 2 - Tela de Cadastro e Login
 
