@@ -36,7 +36,7 @@ A paleta de cores do Projeto Resgate transmite confiança, acolhimento e ação 
 
 A fonte utilizada no projeto é a **Inter**, disponível no Google Fonts, por ser moderna, legível e amplamente utilizada em interfaces digitais.
 
- Título de Página 
+ Título de Página: 
 h1 {
   font-family: 'Inter', sans-serif;
   font-size: 24px;
@@ -44,7 +44,7 @@ h1 {
   color: #1E3A5F;
 }
 
- Título de Seção 
+ Título de Seção: 
 h2 {
   font-family: 'Inter', sans-serif;
   font-size: 18px;
@@ -52,7 +52,7 @@ h2 {
   color: #1E3A5F;
 }
 
-   Textos UI 
+   Textos UI: 
 label, .rotulo {
   font-family: 'Inter', sans-serif;
   font-size: 14px;
@@ -60,7 +60,7 @@ label, .rotulo {
   color: #1E3A5F;
 }
 
- Corpo de Texto 
+ Corpo de Texto: 
 p, body {
   font-family: 'Inter', sans-serif;
   font-size: 14px;
@@ -68,8 +68,8 @@ p, body {
   color: #1E3A5F;
 }
 
- Texto Secundário 
- texto-secundario, span, small {
+ Texto Secundário: 
+ .texto-secundario, span, small {
   font-family: 'Inter', sans-serif;
   font-size: 12px;
   font-weight: 400; 
