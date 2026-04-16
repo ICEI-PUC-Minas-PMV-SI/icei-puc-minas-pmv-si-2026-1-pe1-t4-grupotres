@@ -69,12 +69,13 @@ p, body {
 }
 
  Texto Secundário 
-.texto-secundario, span, small {
+ texto-secundario, span, small {
   font-family: 'Inter', sans-serif;
   font-size: 12px;
   font-weight: 400; 
   color: #6B7280;
 }
+
 ---
 
 ### Iconografia
