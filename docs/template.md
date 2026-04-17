@@ -6,6 +6,8 @@ Layout padrão do site (HTML e CSS) que será utilizado em todas as páginas com
 
 O layout do Projeto Resgate segue uma estrutura padrão composta por:
 
+![Layout Padrão](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/icei-puc-minas-pmv-si-2026-1-pe1-t4-grupotres/main/docs/img/layout-padrao-projeto-resgate.jpg)
+
 - **Header:** contém o logotipo do sistema no canto superior esquerdo, barra de busca central, ícones de notificação e mensagens, e o perfil do usuário no canto superior direito.
 - **Menu lateral (sidebar):** presente nas telas internas, com links de navegação para Início, Explorar Projetos, Meus Projetos, Meu Perfil, Mensagens, Notificações e Configurações.
 - **Área de conteúdo principal:** ocupa o restante da tela e varia conforme a página acessada.
