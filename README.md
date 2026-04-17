@@ -6,6 +6,9 @@
 `DISCIPLINA: Projeto - Aplicações Web`
 
 `SEMESTRE: 1º`
+
+![Logo Projeto Resgate](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/icei-puc-minas-pmv-si-2026-1-pe1-t4-grupotres/main/docs/img/Aperto_de_M%C3%A3os_Projeto_Resgate.png)
+
 O objetivo do projeto é aproximar pessoas de causas que realmente importam para elas. Muitas vezes, alguém quer ajudar, mas não sabe por onde começar ou onde encontrar oportunidades confiáveis. O Projeto Resgate surge justamente para facilitar esse caminho e criar conexões reais entre quem quer ajudar e quem precisa de ajuda, fortalecendo a solidariedade e o senso de comunidade.
 
 ## Integrantes
