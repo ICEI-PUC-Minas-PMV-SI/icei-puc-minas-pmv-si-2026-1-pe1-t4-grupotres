@@ -20,17 +20,19 @@ Em resumo, a principal questão a ser resolvida é a falta de uma solução digi
 
 ## Objetivos
 
-## Objetivos Gerais
 O objetivo principal do Projeto Resgate é criar uma plataforma online que una de maneira eficaz e centralizada voluntários e organizações que executam projetos sociais, diminuindo as dificuldades na captação e engajamento de voluntários.
+
 Os objetivos específicos são os seguintes:
 
-## Objetivos Específicos
+●	Possibilitar o registro de voluntários e organizações sociais com perfis diferentes e personalizados;
 
-> - Possibilitar o registro de voluntários e organizações sociais com perfis diferentes e personalizados;
-> - Permitir que organizações publicam, administram e finalizar projetos sociais, detalhando as demandas de voluntários e os dados de contato;
-> - Proporcionar ao voluntário uma interface para pesquisar e filtrar projetos, tornando mais fácil encontrar oportunidades que correspondam ao seu perfil;
-> - Mostrar uma página com detalhes de cada projeto, incluindo informações completas sobre a causa, atividades planejadas e formas de contato com a instituição responsável;
-> - Assegurar uma autenticação segura e a proteção das informações dos usuários em conformidade com a LGPD.
+●	Permitir que organizações publicam, administram e finalizar projetos sociais, detalhando as demandas de voluntários e os dados de contato;
+
+●	Proporcionar ao voluntário uma interface para pesquisar e filtrar projetos, tornando mais fácil encontrar oportunidades que correspondam ao seu perfil;
+
+●	Mostrar uma página com detalhes de cada projeto, incluindo informações completas sobre a causa, atividades planejadas e formas de contato com a instituição responsável;
+
+●	Assegurar uma autenticação segura e a proteção das informações dos usuários em conformidade com a LGPD.
 
 ## Justificativa
 
