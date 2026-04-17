@@ -48,9 +48,10 @@ O recente desastre das chuvas de Juiz de Fora, nos mostrou que temos uma falha e
 
 É justamente essa conexão que precisa ser feita de forma mais rápida, pois quando houver uma pessoa querendo ajudar outra ela consiga de uma forma mais rápida e ver quais instituições têm projeto e em que esse projeto está precisando de ajuda.
 
+
 ## Público-Alvo
 
-O Projeto Resgate é voltado para dois grupos principais de usuários: Instituições que realizam projetos sociais, incluem organizações sem fins lucrativos, ONGs, fundações, associações comunitárias e outras entidades que promovem ações sociais e que encontram desafios para recrutar voluntários de maneira eficaz. Embora essas instituições variem em tamanho e área de atuação — como saúde, educação, assistência social, meio ambiente, entre outras —, elas têm em comum a necessidade de um canal centralizado para divulgar suas necessidades e recrutar colaboradores.
+O Projeto Resgate é voltado para dois grupos principais de usuários: Instituições que realizam projetos sociais, incluem organizações sem fins lucrativos, ONGs, fundações, associações comunitárias e outras entidades que promovem ações sociais e que encontram desafios para recrutar voluntários de maneira eficaz. Embora essas instituições variem em tamanho e área de atuação - como saúde, educação, assistência social, meio ambiente, entre outras - elas têm em comum a necessidade de um canal centralizado para divulgar suas necessidades e recrutar colaboradores.
 
 Cidadãos interessados em voluntariado: indivíduos de todas as idades e perfis socioeconômicos que desejam ajudar em causas sociais, mas enfrentam dificuldades para encontrar oportunidades adequadas, seja por falta de informação, dificuldade de acesso ou falta de um canal de referência confiável. Esse grupo abrange tanto pessoas com experiência anterior em voluntariado quanto aquelas que estão começando esse tipo de envolvimento.
 
