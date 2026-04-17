@@ -36,16 +36,17 @@ Os objetivos específicos são os seguintes:
 
 ## Justificativa
 
-Instituições e voluntários não tem uma forma fácil de se conectarem e nós queremos facilitar a conexão. Com a centralização da busca de voluntários em uma plataforma específica, instituições irão angariar voluntários de forma mais simplificada, adiantando trabalhos e beneficiando a sociedade.
+Instituições e voluntários não tem uma forma fácil de se conectarem e o Projeto pretende facilitar essa conexão entre o projeto e o voluntário. Com a centralização da busca de voluntários em uma plataforma específica, instituições irão angariar voluntários de forma mais simplificada, adiantando trabalhos e beneficiando a sociedade.
 
 A falta de voluntários já colocou em riscos projetos, uma matéria do site Acidade On, no ano da covid 19, o Instituto Butantan estava precisando de voluntários para dar andamento ao teste da vacina e não estava conseguindo ter voluntários para os testes.
+
 Segundo o Jornal Data Folha de São Paulo (2021), há grande interesse dos brasileiros para o trabalho social, mas um dos principais motivos para o não engajamento é a falta de informação sobre essas atividades e meios para se engajar é um dos problemas que dificulta uma maior adesão aos serviços em projetos sociais.
 
 Já segundo o site G1 (2018), o Brasil ainda tem que melhorar na área de responsabilidade social, pois tem vários projetos que precisam de colaboradores e esses projetos não evoluem ou não atendem mais pessoas por falta de pessoas.
 
 O recente desastre das chuvas de Juiz de Fora, nos mostrou que temos uma falha em juntar as instituições que querem ajudar com as pessoas. Pois com as chuvas deste ano na cidade, apareceu várias empresas e/ou instituições para ajudar na cidade, mas foi o site Tribuna de Minas (2026) que juntou algumas dessas ações e colocou em seu site, para que o voluntário pudesse ver onde se enquadraria melhor com a sua ajuda e no site do Tribuna de Minas tinha o contato da instituição onde as pessoas poderiam pegar as informações para entrar em contato.
 
-O que queremos é justamente fazer essa ponte, pois quando houver uma pessoa querendo ajudar outra ela consiga de uma forma mais rápida e ver quais instituições têm projeto e em que esse projeto está precisando de ajuda.
+É justamente essa conexão que precisa ser feita de forma mais rápida, pois quando houver uma pessoa querendo ajudar outra ela consiga de uma forma mais rápida e ver quais instituições têm projeto e em que esse projeto está precisando de ajuda.
 
 ## Público-Alvo
 
