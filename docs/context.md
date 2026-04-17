@@ -13,6 +13,7 @@ A falta de uma plataforma centralizada e de fácil acesso para conectar voluntá
 De maneira semelhante, cidadãos interessados em voluntariado encontram desafios para encontrar oportunidades que se alinhem às suas habilidades, localização geográfica e disponibilidade de tempo. Essa desproporção na informação leva ao sub atendimento de projetos sociais, mesmo quando existe a possibilidade de envolvimento voluntário na sociedade.
 
 A situação se torna mais grave em situações de crise, como desastres naturais, pandemias ou emergências humanitárias, quando a demanda por mobilização rápida é maior e a falta de um canal unificado dificulta a coordenação eficiente das ações.
+
 O episódio das inundações em Juiz de Fora (2026) e o desafio do Instituto Butantan em angariar voluntários para os testes da ButanVac durante a pandemia de Covid-19 exemplificam de forma concreta os efeitos dessa falha.
 
 Em resumo, a principal questão a ser resolvida é a falta de uma solução digital unificada que torne mais simples e centralize o processo de recrutamento de voluntários por organizações sociais, ao mesmo tempo que orienta e facilita a participação de cidadãos interessados em apoiar causas coletivas.
