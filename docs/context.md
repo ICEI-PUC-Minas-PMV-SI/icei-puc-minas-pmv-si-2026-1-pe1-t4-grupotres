@@ -51,3 +51,136 @@ O Projeto Resgate é voltado para dois grupos principais de usuários: Institui�
 Cidadãos interessados em voluntariado: indivíduos de todas as idades e perfis socioeconômicos que desejam ajudar em causas sociais, mas enfrentam dificuldades para encontrar oportunidades adequadas, seja por falta de informação, dificuldade de acesso ou falta de um canal de referência confiável. Esse grupo abrange tanto pessoas com experiência anterior em voluntariado quanto aquelas que estão começando esse tipo de envolvimento.
 
 De maneira secundária, a plataforma pode ser proveitosa para empresas que buscam incentivar o voluntariado entre seus funcionários, bem como para órgãos públicos e pesquisadores que desejam mapear projetos sociais em curso no país.
+
+## Especificação do Projeto - Perfis de Usuário 
+
+## Cidadão Voluntário
+# Descrição: 	
+Pessoa física interessada em participar de ações sociais, mas enfrenta dificuldades em encontrar oportunidades de voluntariado compatíveis com seus interesses, localização e disponibilidade de tempo. 
+
+# Necessidades: 	
+Pesquisar oportunidades de voluntariado
+Filtrar projetos por localização, disponibilidade de tempo, tipo de atividade e interesses
+Visualizar detalhes dos projetos (descrição, requisitos, datas e local)
+Realizar inscrição nos projetos de forma prática
+Entrar em contato com as instituições responsáveis
+Acompanhar os projetos nos quais está vinculado
+
+## Instituição voluntária
+# Descrição: 	
+Pessoa responsável pela gestão de projetos sociais em uma organização (ONG, fundação ou associação comunitária), que necessita de um sistema para divulgar iniciativas e recrutar voluntários de forma eficiente
+
+# Necessidades: 	
+Cadastrar e editar projetos de voluntariado
+Informar descrição, requisitos, datas, local e número de vagas
+Publicar demandas específicas de voluntariado
+Gerenciar inscrições de voluntários
+Visualizar perfis dos candidatos
+Fazer a aprovação
+Entrar em contato com voluntários
+Acompanhar a participação e o engajamento dos voluntários
+Visualizar e atualizar o perfil institucional
+
+## Persona - Cidadão:
+
+![Quero ajudar, mas não sei por onde começar e nem tenho muito tempo](image.png)
+
+Nome: Lucas Andrade
+Idade: 23 anos
+Localização: Belo Horizonte – MG
+Ocupação: Estudante universitário e estagiário
+# descrição
+Lucas tem interesse em participar de ações sociais, principalmente relacionadas a meio ambiente e apoio a comunidades. Ele já tentou encontrar oportunidades, mas teve dificuldade por falta de informações claras e pela limitação de tempo
+
+# Objetivos
+Participar de projetos sociais
+Contribuir com causas que se identifica
+Encontrar oportunidades rápidas e próximas
+
+# Dores / Frustrações
+Não sabe onde encontrar projetos confiáveis
+Informações incompletas ou desatualizadas
+Falta de tempo para procurar oportunidades
+
+# Comportamentos
+Usa redes sociais diariamente, principalmente à noite
+Pesquisa no Google, mas desiste quando o processo é complicado
+Já demonstrou interesse em voluntariado, mas nunca participou
+
+## Persona - Instituição:
+![Preciso de voluntários, mas não consigo alcançar as pessoas certas.](image-1.png)
+
+Nome: Ana Paula Souza
+Idade: 38 anos
+Localização: Belo Horizonte – MG
+Ocupação: Coordenadora de ONG
+
+# descrição:
+Ana é responsável por organizar projetos sociais e recrutar voluntários. Ela enfrenta dificuldades para encontrar pessoas comprometidas e divulgar suas ações de forma eficiente.
+
+# Objetivos:
+Recrutar voluntários rapidamente
+Divulgar projetos com maior alcance
+Organizar melhor os participantes
+
+# Dores / Frustrações:
+Dificuldade em encontrar voluntários engajados
+Falta de um sistema organizado
+Alto índice de desistência
+
+# Comportamentos
+Usa WhatsApp e redes sociais para divulgação
+Depende de indicações e contatos
+Gasta muito tempo organizando voluntários manualmente
+
+## Histórias de usuários
+# Eu como …                    quero/desejo                            para ..
+[QUEM]                        [O QUE]                               [PORQUE]
+Responsável por uma        Encontrar voluntários            Para preencher vagas e garantir
+instituição                                                 a participação de pessoas nos  
+                                                            projetos sociais.
+
+Cidadão interessado em     Me voluntariar em projetos       Para contribuir com causas 
+voluntariado                                                sociais e encontrar oportunidades
+                                                            próximas à minha localização.
+## Requisitos do Projeto
+- Ser entregue em até 1 semana;
+- Não gerar nenhum custo inicial para hospedagem.  
+
+## Requisitos Funcionais: 
+# ID	                              Descrição	                                  Prioridade
+0	O sistema deve apresentar informações sobre o projeto ao usuário	            Alta
+1	O sistema deve permitir ao usuário visualizar e editar seu perfil	            Alta
+2	O sistema deve permitir à instituição visualizar e editar seu perfil	        Alta
+3	O sistema deve permitir o cadastro de usuários e instituições	                Alta
+4	O sistema deve permitir à instituição cadastrar, editar e excluir projetos de voluntariado	                                                                      Alta
+5	O sistema deve permitir ao usuário pesquisar projetos de voluntariado	        Alta
+6	O sistema deve permitir ao usuário visualizar detalhes dos projetos, incluindo descrição, requisitos e contato	                                                   Alta
+7	O sistema deve permitir ao usuário se inscrever em projetos de voluntariado	    Alta
+8	O sistema deve permitir à instituição visualizar e gerenciar voluntários inscritos                                                                          Média
+9	O sistema deve permitir a comunicação entre usuário e instituição	           Média
+
+## Requisitos não funcionais:
+# ID                       Descrição                                           Prioridade
+0           Proteção de dados (LGPD)                                               Alta
+1           Autenticação segura (Login, Senha e Verificação de identidade)        Alta
+2           Sistema disponível 24 horas por dia (alta disponibilidade)             Média
+3           Compatibilidade com dispositivos móveis e navegadores modernos         Alta
+4           Acessibilidade para usuários com deficiência                           Média
+5           Suporte a múltiplos idiomas                                            Baixa
+6           Envio de notificações por e-mail não críticas                          Baixa
+
+## Referências Bibliográficas
+A Cidade On, Falta de voluntários pode atrapalhar estudos da ButanVac. Araraquara, 2021.
+Disponível em: https://www.acidadeon.com/acervo/araraquara/falta-de-voluntarios-pode-atrapalhar-estudos-da-butanvac/amp/. Acesso em: 21 de mar 2026.
+Folha de São Paulo, Maioria tem interesse, mas poucos fazem trabalho voluntário. São Paulo,
+2021. Disponivel em: https://www1.folha.uol.com.br/seminariosfolha/2021/12/maioria-tem-interesse-
+mas-poucos-fazem-trabalho-voluntario-mostra-datafolha.shtml. Acesso em: 21 de mar 2026.
+G1, Falta de voluntários limita evolução da responsabilidade social', diz fundadora da
+Abraccia. Ribeirão Preto, 2018. Disponível em: https://g1.globo.com/sp/ribeirao-preto-
+franca/noticia/2018/12/28/falta-de-voluntarios-limita-evolucao-da-responsabilidade-social-diz-
+fundadora-da-abraccia.ghtml. Acesso em: 21 de mar 2026.
+Tribuna de Minas, Precisa de ajuda ou quer ajudar? Veja iniciativas em Juiz de Fora que
+prestam apoio para os atingidos pela chuva. 2026. Disponível em:
+https://tribunademinas.com.br/noticias/cidade/26-02-2026/iniciativas-apoio-jf.html. Acesso em: 21 de
+mar 2026.
