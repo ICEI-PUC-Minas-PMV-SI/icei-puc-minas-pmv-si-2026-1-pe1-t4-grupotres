@@ -138,42 +138,40 @@ Usa WhatsApp e redes sociais para divulgação
 Depende de indicações e contatos
 Gasta muito tempo organizando voluntários manualmente
 
-## Histórias de usuários
-# Eu como …                    quero/desejo                            para ..
-[QUEM]                        [O QUE]                               [PORQUE]
-Responsável por uma        Encontrar voluntários            Para preencher vagas e garantir
-instituição                                                 a participação de pessoas nos  
-                                                            projetos sociais.
+## Histórias de Usuário
 
-Cidadão interessado em     Me voluntariar em projetos       Para contribuir com causas 
-voluntariado                                                sociais e encontrar oportunidades
-                                                            próximas à minha localização.
+| Eu como (QUEM) | Quero/Desejo (O QUE) | Para (PORQUE) |
+|----------------|----------------------|---------------|
+| Responsável por uma instituição | Encontrar voluntários | Para preencher vagas e garantir a participação de pessoas nos projetos sociais |
+| Cidadão interessado em voluntariado | Me voluntariar em projetos | Para contribuir com causas sociais e encontrar oportunidades próximas à minha localização |
 ## Requisitos do Projeto
 - Ser entregue em até 1 semana;
 - Não gerar nenhum custo inicial para hospedagem.  
 
 ## Requisitos Funcionais: 
-# ID	                              Descrição	                                  Prioridade
-0	O sistema deve apresentar informações sobre o projeto ao usuário	            Alta
-1	O sistema deve permitir ao usuário visualizar e editar seu perfil	            Alta
-2	O sistema deve permitir à instituição visualizar e editar seu perfil	        Alta
-3	O sistema deve permitir o cadastro de usuários e instituições	                Alta
-4	O sistema deve permitir à instituição cadastrar, editar e excluir projetos de voluntariado	                                                                      Alta
-5	O sistema deve permitir ao usuário pesquisar projetos de voluntariado	        Alta
-6	O sistema deve permitir ao usuário visualizar detalhes dos projetos, incluindo descrição, requisitos e contato	                                                   Alta
-7	O sistema deve permitir ao usuário se inscrever em projetos de voluntariado	    Alta
-8	O sistema deve permitir à instituição visualizar e gerenciar voluntários inscritos                                                                          Média
-9	O sistema deve permitir a comunicação entre usuário e instituição	           Média
+| ID | Descrição | Prioridade |
+|----|----------|-----------|
+| 0 | O sistema deve apresentar informações sobre o projeto ao usuário | Alta |
+| 1 | O sistema deve permitir ao usuário visualizar e editar seu perfil | Alta |
+| 2 | O sistema deve permitir à instituição visualizar e editar seu perfil | Alta |
+| 3 | O sistema deve permitir o cadastro de usuários e instituições | Alta |
+| 4 | O sistema deve permitir à instituição cadastrar, editar e excluir projetos de voluntariado | Alta |
+| 5 | O sistema deve permitir ao usuário pesquisar projetos de voluntariado | Alta |
+| 6 | O sistema deve permitir ao usuário visualizar detalhes dos projetos, incluindo descrição, requisitos e contato | Alta |
+| 7 | O sistema deve permitir ao usuário se inscrever em projetos de voluntariado | Alta |
+| 8 | O sistema deve permitir à instituição visualizar e gerenciar voluntários inscritos | Média |
+| 9 | O sistema deve permitir a comunicação entre usuário e instituição | Média |
+## Requisitos não funcionais
 
-## Requisitos não funcionais:
-# ID                       Descrição                                           Prioridade
-0           Proteção de dados (LGPD)                                               Alta
-1           Autenticação segura (Login, Senha e Verificação de identidade)        Alta
-2           Sistema disponível 24 horas por dia (alta disponibilidade)             Média
-3           Compatibilidade com dispositivos móveis e navegadores modernos         Alta
-4           Acessibilidade para usuários com deficiência                           Média
-5           Suporte a múltiplos idiomas                                            Baixa
-6           Envio de notificações por e-mail não críticas                          Baixa
+| ID | Descrição | Prioridade |
+|----|----------|-----------|
+| 0 | Proteção de dados (LGPD) | Alta |
+| 1 | Autenticação segura (login, senha e verificação de identidade) | Alta |
+| 2 | Sistema disponível 24 horas por dia (alta disponibilidade) | Média |
+| 3 | Compatibilidade com dispositivos móveis e navegadores modernos | Alta |
+| 4 | Acessibilidade para usuários com deficiência | Média |
+| 5 | Suporte a múltiplos idiomas | Baixa |
+| 6 | Envio de notificações por e-mail não críticas | Baixa |
 
 ## Referências Bibliográficas
 A Cidade On, Falta de voluntários pode atrapalhar estudos da ButanVac. Araraquara, 2021.
