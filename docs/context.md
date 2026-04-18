@@ -60,10 +60,10 @@ De maneira secundária, a plataforma pode ser proveitosa para empresas que busca
 ## Especificação do Projeto - Perfis de Usuário 
 
 ## Cidadão Voluntário
-# Descrição: 	
+**Descrição:** 	
 Pessoa física interessada em participar de ações sociais, mas enfrenta dificuldades em encontrar oportunidades de voluntariado compatíveis com seus interesses, localização e disponibilidade de tempo. 
 
-# Necessidades: 	
+**Necessidades:** 	
 Pesquisar oportunidades de voluntariado
 Filtrar projetos por localização, disponibilidade de tempo, tipo de atividade e interesses
 Visualizar detalhes dos projetos (descrição, requisitos, datas e local)
@@ -72,10 +72,10 @@ Entrar em contato com as instituições responsáveis
 Acompanhar os projetos nos quais está vinculado
 
 ## Instituição voluntária
-# Descrição: 	
+**Descrição:** 	
 Pessoa responsável pela gestão de projetos sociais em uma organização (ONG, fundação ou associação comunitária), que necessita de um sistema para divulgar iniciativas e recrutar voluntários de forma eficiente
 
-# Necessidades: 	
+**Necessidades:**	
 Cadastrar e editar projetos de voluntariado
 Informar descrição, requisitos, datas, local e número de vagas
 Publicar demandas específicas de voluntariado
@@ -94,20 +94,20 @@ Nome: Lucas Andrade
 Idade: 23 anos
 Localização: Belo Horizonte – MG
 Ocupação: Estudante universitário e estagiário
-# descrição
+**Descrição**
 Lucas tem interesse em participar de ações sociais, principalmente relacionadas a meio ambiente e apoio a comunidades. Ele já tentou encontrar oportunidades, mas teve dificuldade por falta de informações claras e pela limitação de tempo
 
-# Objetivos
+**Objetivos:**
 Participar de projetos sociais
 Contribuir com causas que se identifica
 Encontrar oportunidades rápidas e próximas
 
-# Dores / Frustrações
+**Dores / Frustrações:**
 Não sabe onde encontrar projetos confiáveis
 Informações incompletas ou desatualizadas
 Falta de tempo para procurar oportunidades
 
-# Comportamentos
+**Comportamentos:**
 Usa redes sociais diariamente, principalmente à noite
 Pesquisa no Google, mas desiste quando o processo é complicado
 Já demonstrou interesse em voluntariado, mas nunca participou
@@ -120,20 +120,20 @@ Idade: 38 anos
 Localização: Belo Horizonte – MG
 Ocupação: Coordenadora de ONG
 
-# descrição:
+**Descrição**
 Ana é responsável por organizar projetos sociais e recrutar voluntários. Ela enfrenta dificuldades para encontrar pessoas comprometidas e divulgar suas ações de forma eficiente.
 
-# Objetivos:
+**Objetivos:**
 Recrutar voluntários rapidamente
 Divulgar projetos com maior alcance
 Organizar melhor os participantes
 
-# Dores / Frustrações:
+**Dores / Frustrações:**
 Dificuldade em encontrar voluntários engajados
 Falta de um sistema organizado
 Alto índice de desistência
 
-# Comportamentos
+**Comportamentos:**
 Usa WhatsApp e redes sociais para divulgação
 Depende de indicações e contatos
 Gasta muito tempo organizando voluntários manualmente
