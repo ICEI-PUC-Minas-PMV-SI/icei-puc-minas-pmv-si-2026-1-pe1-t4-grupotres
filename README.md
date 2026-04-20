@@ -6,7 +6,10 @@
 `DISCIPLINA: Projeto - Aplicações Web`
 
 `SEMESTRE: 1º`
-O projeto resgate tem o intuito de juntar pessoas que desejam se voluntariar a projetos que necessitem de voluntarios 
+
+![Logo Projeto Resgate](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/icei-puc-minas-pmv-si-2026-1-pe1-t4-grupotres/main/docs/img/logo-projeto-resgate.png)
+
+O objetivo do projeto é aproximar pessoas de causas que realmente importam para elas. Muitas vezes, alguém quer ajudar, mas não sabe por onde começar ou onde encontrar oportunidades confiáveis. O Projeto Resgate surge justamente para facilitar esse caminho e criar conexões reais entre quem quer ajudar e quem precisa de ajuda, fortalecendo a solidariedade e o senso de comunidade.
 
 ## Integrantes
 
@@ -16,7 +19,7 @@ O projeto resgate tem o intuito de juntar pessoas que desejam se voluntariar a p
 * Mateus de Freitas Resende Noronha Xavier
 
 
-teste m
+
 ## Orientador
 
 * Caroline Rhaian da Silva Jandre
