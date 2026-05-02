@@ -116,3 +116,10 @@ form {
         margin-top: 15px;
     }
 }
+.logo img {
+      height: auto;
+  display: flex;
+  align-items: center;
+position: absolute;
+right: 20px;
+}
