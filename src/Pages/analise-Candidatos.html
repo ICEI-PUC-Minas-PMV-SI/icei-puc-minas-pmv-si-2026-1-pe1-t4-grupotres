@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/analiseCandidatos.css">
+    <title>Análise de Candidatos - Projeto Resgate</title>
+</head>
+
+<body>
+    <div id="app" class="container-app">
+        <!-- Barra Lateral -->
+        <aside id="barra-lateral" class="barra-lateral">
+            <div class="logo-barra-lateral">
+                <img src="/img/hand-holding-hand-solid.png" alt="Logo" class="icone-img"> Projeto Resgate
+            </div>
+            <nav class="navegacao-barra-lateral">
+                <ul id="menu-navegacao">
+                    <li><a href="#" id="link-inicio"><img src="/img/house-regular.png" alt="Início" class="icone-img">
+                            Início</a></li>
+                    <li><a href="#" id="link-explorar"><img src="/img/magnifying-glass-solid.png" alt="Explorar"
+                                class="icone-img"> Explorar Projetos</a></li>
+                    <li class="ativo"><a href="#" id="link-painel-instituicao"><img src="/img/user-tie-solid.png"
+                                alt="Instituição" class="icone-img"> Painel da Instituição</a></li>
+                    <li><a href="#" id="link-meus-projetos"><img src="/img/circle-check-regular.png" alt="Projetos"
+                                class="icone-img"> Meus Projetos</a></li>
+                    <li><a href="#" id="link-criar-projeto"><img src="/img/circle-check-regular.png" alt="Criar"
+                                class="icone-img"> Criar Projeto</a></li>
+                </ul>
+            </nav>
+            <div class="rodape-barra-lateral">
+                <a href="#" id="link-sair-conta" class="link-sair"><img src="/img/circle-xmark-regular.png" alt="Sair"
+                        class="icone-img"> Sair da Conta</a>
+            </div>
+        </aside>
+
+        <!-- Conteudo Principal -->
+        <div class="conteudo-principal">
+            <!-- Barra Superior -->
+            <header class="barra-superior">
+                <div class="barra-busca">
+                    <img src="/img/magnifying-glass-solid.png" alt="Busca" class="icone-img">
+                    <input type="text" id="input-busca" placeholder="Buscar projetos, instituições ou voluntários...">
+                </div>
+                <div class="acoes-barra-superior">
+                    <button id="btn-novo-projeto-topo" class="btn-primario">Novo Projeto</button>
+                    <div id="perfil-usuario-topo" class="perfil-usuario">
+                        <div class="info-usuario">
+                            <span id="nome-usuario-logado" class="nome-usuario">JSON JS</span>
+                            <span class="funcao-usuario">Instituição</span>
+                        </div>
+                        <div class="avatar-usuario">
+                            <img src="/img/user-tie-solid.png" alt="Avatar" class="icone-img-pequeno">
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Conteudo da Pagina -->
+            <main id="conteudo-pagina" class="conteudo-pagina">
+                <div class="cabecalho-pagina">
+                    <div class="titulo-pagina">
+                        <h1>Análise de Candidatos</h1>
+                        <p>Gerencie os candidatos de seus projetos</p>
+                    </div>
+                    <div class="migalhas-pao">
+                        <span>Início</span> / <span class="ativo">Painel da Instituição</span>
+                    </div>
+                </div>
+
+                <!-- Info Projeto -->
+                <div class="info-projeto-analise">
+                    <div class="icone-projeto-analise"> <img src="/img/user-tie-solid.png" alt="Instituição">
+                    </div>
+                    <h2>Alfabetização para Adultos — Comunidade Sol Nascente</h2>
+                </div>
+
+                <!-- Cartão Candidato -->
+                <div class="cartao-candidato">
+                    <!-- Secao 1: Dados Cadastrais -->
+                    <div class="secao-candidato">
+                        <div class="acoes-candidato">
+                            <button class="btn-aprovar"><img src="/img/circle-check-regular.png" class="icone-img">
+                                Aprova Candidato</button>
+                            <button class="btn-recusar"><img src="/img/circle-xmark-regular.png" class="icone-img">
+                                Recusar Candidato</button>
+                        </div>
+
+                        <div class="conteudo-dados">
+                            <div class="foto-candidato">
+                                <img src="" alt="">
+                            </div>
+                            <div class="dados-cadastrais-grid">
+                                <h3 class="titulo-secao-interna" style="grid-column: 1 / -1; margin-bottom: 0;">Dados
+                                    Cadastrais</h3>
+
+                                <div class="grupo-dado">
+                                    <label>Nome completo</label>
+                                    <input type="text" value="Lorem" readonly>
+                                </div>
+                                <div class="grupo-dado">
+                                    <label>E-mail</label>
+                                    <input type="email" value="Lorem" readonly>
+                                </div>
+                                <div class="grupo-dado">
+                                    <label>Telefone</label>
+                                    <input type="text" value="(11) 99999-9999" readonly>
+                                </div>
+                                <div class="grupo-dado">
+                                    <label>Localização</label>
+                                    <input type="text" value="São Paulo, SP" readonly>
+                                </div>
+                                <div class="grupo-dado">
+                                    <label>Data de nascimento</label>
+                                    <input type="text" value="15/03/1995" readonly>
+                                </div>
+                                <div class="grupo-dado">
+                                    <label>Gênero</label>
+                                    <input type="text" value="Sla" readonly>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="divisor">
+
+                    <!-- Secao 2: Biografia -->
+                    <div class="secao-candidato">
+                        <h3 class="titulo-secao-interna">Biografia</h3>
+                        <div class="caixa-biografia">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel sed quasi recusandae,
+                                repudiandae qui sunt illum, quos dolorum facilis dolore cum harum sit. Perferendis et
+                                nisi consectetur provident facere! Dignissimos.</p>
+                        </div>
+                    </div>
+
+                    <hr class="divisor">
+
+                    <!-- Secao 3: Areas e Habilidades -->
+                    <div class="secao-candidato grade-2-col">
+                        <div class="coluna-dado borda-direita">
+                            <h3 class="titulo-secao-interna">Áreas de Interesse</h3>
+                            <div class="lista-tags">
+                                <span class="tag-texto azul">Educação</span>
+                                <span class="tag-texto azul">Saúde Comunitária</span>
+                                <span class="tag-texto azul">Meio Ambiente</span>
+                                <span class="tag-texto azul">Direitos Humanos</span>
+                            </div>
+                        </div>
+                        <div class="coluna-dado padding-esquerda">
+                            <h3 class="titulo-secao-interna">Habilidades</h3>
+                            <div class="lista-tags">
+                                <span class="tag-texto azul">Ensino e Tutoria</span>
+                                <span class="tag-texto azul">Organização de Eventos</span>
+                                <span class="tag-texto azul">Comunicação</span>
+                                <span class="tag-texto azul">Design Gráfico</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="divisor">
+
+                    <!-- Secao 4: Disponibilidade e Causas -->
+                    <div class="secao-candidato grade-2-col">
+                        <div class="coluna-dado borda-direita">
+                            <h3 class="titulo-secao-interna">Disponibilidade</h3>
+                            <ul class="lista-disponibilidade">
+                                <li>Manhãs nos finais de semana</li>
+                                <li>Tardes durante a semana</li>
+                                <li>Noites durante a semana</li>
+                                <li>Remoto / Online</li>
+                            </ul>
+                        </div>
+                        <div class="coluna-dado padding-esquerda">
+                            <h3 class="titulo-secao-interna">Causas Preferidas</h3>
+                            <div class="grid-causas">
+                                <span class="tag-causa verde"><img src="/img/leaf-solid.png" class="icone-img-pequeno"
+                                        onerror="this.src='/img/hand-holding-hand-solid.png'"> Sustentabilidade</span>
+                                <span class="tag-causa amarelo"><img src="/img/book-solid.png" class="icone-img-pequeno"
+                                        onerror="this.src='/img/hand-holding-hand-solid.png'"> Alfabetização</span>
+                                <span class="tag-causa roxo"><img src="/img/heart-solid.png" class="icone-img-pequeno"
+                                        onerror="this.src='/img/hand-holding-hand-solid.png'"> Inclusão Social</span>
+                                <span class="tag-causa vermelho"><img src="/img/utensils-solid.png"
+                                        class="icone-img-pequeno" onerror="this.src='/img/hand-holding-hand-solid.png'">
+                                    Combate à Fome</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+        </div>
+    </div>
+</body>
+
+</html>
