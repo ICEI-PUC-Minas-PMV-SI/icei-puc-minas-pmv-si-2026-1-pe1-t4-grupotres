@@ -116,10 +116,36 @@ form {
         margin-top: 15px;
     }
 }
-.logo img {
-      height: auto;
-  display: flex;
-  align-items: center;
-position: absolute;
-right: 20px;
+.header{
+    background: #24364a;
+    padding: 18px 40px;
+}
+
+.logo-area{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo{
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+
+    transition: 0.3s;
+}
+
+.logo:hover{
+    transform: scale(1.05);
+}
+
+.logo-area h1{
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0;
+
+    font-family: Arial, sans-serif;
 }
