@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/cadastro.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Cadastro - Projeto Resgate</title>
+</head>
+
+<body>
+
+    <main class="container">
+
+        <section class="esquerda">
+
+            <div class="logo-container">
+                <img src="/src/assets/hand-holding-hand-solid.png" alt="Logo">
+                <span>Projeto Resgate</span>
+            </div>
+
+            <div class="texto">
+                <h1>Conectando pessoas que transformam vidas</h1>
+                <p>Voluntários e instituições juntos gerando impacto social.</p>
+            </div>
+
+        </section>
+
+        <section class="direita">
+
+            <div class="formulario">
+
+                <a href="/" id="link-voltar" class="voltar">← Voltar ao site</a>
+
+                <div id="tipo-cadastro-container" class="tipoCadastro">
+                    <button id="btn-voluntario" type="button" class="ativo">Voluntário</button>
+                    <button id="btn-instituicao" type="button">Instituição</button>
+                </div>
+
+                <!-- Formulário Voluntário -->
+                <form id="form-login-voluntario">
+
+                    <div class="grupo">
+                        <label for="email">E-mail</label>
+                        <input id="email" name="email" type="email" placeholder="seu@email.com" required>
+                    </div>
+
+                    <div class="grupo">
+                        <label for="senha">Senha</label>
+                        <input id="senha" name="senha" type="password" placeholder="********" required>
+                    </div>
+
+                    <button id="btn-submit-vol" type="submit" class="botao">Entrar</button>
+
+                    <div class="link">
+                        Ainda não tem conta? <a href="/" id="link-cadastro-">Cadastrar</a>
+                    </div>
+
+                </form>
+
+                <!-- Formulário Instituição
+                               <form id="form-login-instituicao">
+
+                                   <div class="grupo">
+                                       <label for="cnpj">CNPJ</label>
+                                       <input id="cnpj" name="cnpj" type="text" placeholder="00.000.000/0000-00" required>
+                                   </div>
+
+                                   <div class="grupo">
+                                       <label for="senha-inst">Senha</label>
+                                       <input id="senha-inst" name="senha" type="password" placeholder="********" required>
+                                   </div>
+
+                                   <button id="btn-submit-inst" type="submit" class="botao">Entrar</button>
+
+                                   <div class="link">
+                                       Ainda não tem conta? <a href="" id="link-cadastro">Cadastrar</a>
+                                   </div>
+
+                               </form>
+                -->
+            </div>
+
+        </section>
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+
+</html>
