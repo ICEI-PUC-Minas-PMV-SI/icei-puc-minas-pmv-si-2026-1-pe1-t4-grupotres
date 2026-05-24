@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Projeto - Projeto Resgate</title>
+    <!-- Bootstrap CSS (Versão correta 5.3.3) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Estilo Geral do Dashboard (Herdado para consistência) -->
+    <link rel="stylesheet" href="../Css/painel-Voluntario.css">
+    <!-- Estilo Específico da página de Detalhes do Projeto -->
+    <link rel="stylesheet" href="../Css/detalhes-projeto.css">
+</head>
+
+<body>
+    <div id="app" class="container-app">
+        <!-- Barra Lateral -->
+        <aside id="barra-lateral" class="barra-lateral">
+            <div class="logo-barra-lateral">
+                <img src="/src/assets/hand-holding-hand-solid.png" alt="Logo" class="icone-img" />
+                Projeto Resgate
+            </div>
+            <nav class="navegacao-barra-lateral">
+                <ul id="menu-navegacao">
+                    <li>
+                        <a href="landing_page.html" id="link-inicio">
+                            <img src="/src/assets/house-regular.png" alt="Início" class="icone-img" />
+                            Início
+                        </a>
+                    </li>
+                    <li class="ativo">
+                        <a href="projetos.html" id="link-explorar">
+                            <img src="/src/assets/magnifying-glass-solid.png" alt="Explorar" class="icone-img" />
+                            Explorar Projetos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="meus-projetos.html" id="link-meus-projetos">
+                            <img src="/src/assets/circle-check-regular.png" alt="Meus Projetos" class="icone-img" />
+                            Meus Projetos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="painel-Voluntario.html" id="link-perfil">
+                            <img src="/src/assets/user-regular.png" alt="Meu Perfil" class="icone-img" />
+                            Meu Perfil
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="rodape-barra-lateral">
+                <a href="cadastro.html" id="link-sair-conta" class="link-sair">
+                    <img src="/src/assets/circle-xmark-regular.png" alt="Sair" class="icone-img" />
+                    Sair da Conta
+                </a>
+            </div>
+        </aside>
+
+        <!-- Conteúdo Principal -->
+        <div class="conteudo-principal">
+            <!-- Barra Superior -->
+            <header class="barra-superior">
+                <div class="barra-busca">
+                    <img src="/src/assets/magnifying-glass-solid.png" alt="Buscar" class="icone-img" />
+                    <input type="text" id="input-busca" placeholder="Buscar projetos, instituições..." />
+                </div>
+                <div class="acoes-barra-superior">
+                    <div id="perfil-usuario-topo" class="perfil-usuario">
+                        <div class="info-usuario">
+                            <span id="nome-usuario-logado" class="nome-usuario">JSON JS</span>
+                            <span class="funcao-usuario">Voluntária</span>
+                        </div>
+                        <div class="avatar-usuario">
+                            <img src="/src/assets/user-regular.png" alt="Avatar" class="icone-img-pequeno" style="margin-right: 0;" />
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Conteúdo da Página -->
+            <main id="conteudo-pagina" class="conteudo-pagina">
+                <!-- Migalhas de Pão -->
+                <div class="migalhas-pao">
+                    <a href="landing_page.html" class="text-decoration-none text-muted">Início</a> / 
+                    <a href="projetos.html" class="text-decoration-none text-muted">Explorar Projetos</a> / 
+                    <span class="ativo">Detalhes do Projeto</span>
+                </div>
+
+                <!-- Botão Voltar -->
+                <div class="mb-4">
+                    <a href="projetos.html" class="text-decoration-none text-primary fw-semibold small d-inline-flex align-items-center gap-1">
+                        ← Voltar para a lista de projetos
+                    </a>
+                </div>
+
+                <!-- Banner Hero do Projeto -->
+                <div class="banner-projeto-hero mb-4 position-relative overflow-hidden rounded-3 p-4 p-md-5 d-flex flex-column justify-content-end text-white">
+                    <div class="overlay-gradiente"></div>
+                    <div class="conteudo-hero position-relative z-1">
+                        <span class="badge-causa amarelo-hero mb-3">
+                            <img src="/src/assets/hand-holding-hand-solid.png" class="icone-img-pequeno" alt="" />
+                            Alfabetização
+                        </span>
+                        <h1 class="text-white mb-2 text-shadow-sm fw-bold">Leitura para Todos</h1>
+                        <p class="text-white-50 m-0 text-shadow-sm">Organizado por: <strong>ONG Letras Vivas</strong></p>
+                    </div>
+                </div>
+
+                <!-- Grid de Detalhes -->
+                <div class="row g-4">
+                    <!-- Coluna da Esquerda (Conteúdo) -->
+                    <div class="col-lg-8">
+                        <!-- Seção 1: Descrição do Projeto -->
+                        <div class="cartao p-4 mb-4">
+                            <h2 class="titulo-cartao-detalhes mb-3">Sobre o Projeto</h2>
+                            <p class="texto-corpo">O projeto <strong>Leitura para Todos</strong> é focado em transformar vidas por meio da alfabetização e incentivo à leitura para jovens e adultos que não tiveram a oportunidade de estudar na idade adequada.</p>
+                            <p class="texto-corpo">Nossa missão é combater a exclusão social promovendo a autonomia por meio da alfabetização básica e da compreensão de textos do dia a dia (leitura de placas, bulas, contratos e notícias). As aulas ocorrem aos sábados à tarde de forma dinâmica, acolhedora e respeitando o tempo de aprendizado de cada aluno.</p>
+                        </div>
+
+                        <!-- Seção 2: Atividades Desenvolvidas -->
+                        <div class="cartao p-4 mb-4">
+                            <h2 class="titulo-cartao-detalhes mb-3">O que você fará</h2>
+                            <ul class="lista-atividades-detalhes">
+                                <li>
+                                    <img src="/src/assets/circle-check-regular.png" class="icone-img-pequeno text-success" alt="" />
+                                    Auxiliar o professor regente na aplicação de dinâmicas de alfabetização.
+                                </li>
+                                <li>
+                                    <img src="/src/assets/circle-check-regular.png" class="icone-img-pequeno text-success" alt="" />
+                                    Dar suporte individual a alunos com maiores dificuldades em leitura básica.
+                                </li>
+                                <li>
+                                    <img src="/src/assets/circle-check-regular.png" class="icone-img-pequeno text-success" alt="" />
+                                    Ajudar na organização de atividades lúdicas e rodas de contação de histórias.
+                                </li>
+                                <li>
+                                    <img src="/src/assets/circle-check-regular.png" class="icone-img-pequeno text-success" alt="" />
+                                    Preparar materiais didáticos simples sob orientação da equipe pedagógica.
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Seção 3: Requisitos e Habilidades -->
+                        <div class="cartao p-4 mb-4">
+                            <h2 class="titulo-cartao-detalhes mb-3">Habilidades e Requisitos</h2>
+                            <div class="row g-3">
+                                <div class="col-md-6 border-end-md">
+                                    <h4 class="subtitulo-detalhes mb-2">Habilidades Desejadas</h4>
+                                    <div class="d-flex flex-wrap gap-2">
+                                        <span class="etiqueta-detalhes">Ensino e Tutoria</span>
+                                        <span class="etiqueta-detalhes">Boa Comunicação</span>
+                                        <span class="etiqueta-detalhes">Paciência</span>
+                                        <span class="etiqueta-detalhes">Empatia</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 ps-md-4">
+                                    <h4 class="subtitulo-detalhes mb-2">Requisitos Mínimos</h4>
+                                    <ul class="lista-requisitos-detalhes text-secondary small">
+                                        <li>Ensino médio completo ou em andamento</li>
+                                        <li>Idade mínima de 18 anos</li>
+                                        <li>Comprometimento com os horários das aulas</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Seção 4: Projetos Relacionados -->
+                        <div class="mb-4">
+                            <h2 class="titulo-cartao-detalhes mb-3">Outros Projetos Recomendados</h2>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="cartao p-3 h-100 d-flex flex-column card-relacionado borda-azul">
+                                        <h4 class="titulo-relacionado mb-1">Reforço Escolar de Matemática</h4>
+                                        <p class="nome-instituicao-card small text-muted mb-2">Associação Educar Mais</p>
+                                        <p class="small text-secondary flex-grow-1 mb-2">Apoie online crianças do ensino fundamental com reforço de matemática básica.</p>
+                                        <a href="#" class="text-decoration-none text-primary fw-bold small mt-auto">Ver projeto →</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="cartao p-3 h-100 d-flex flex-column card-relacionado borda-rosa">
+                                        <h4 class="titulo-relacionado mb-1">Inclusão Digital para Idosos</h4>
+                                        <p class="nome-instituicao-card small text-muted mb-2">Lar de Idosos São José</p>
+                                        <p class="small text-secondary flex-grow-1 mb-2">Ensine idosos a usarem smartphones e computadores para contato com a família.</p>
+                                        <a href="#" class="text-decoration-none text-primary fw-bold small mt-auto">Ver projeto →</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Coluna da Direita (Painel Lateral de Ação) -->
+                    <div class="col-lg-4">
+                        <!-- Card de Inscrição Rápida -->
+                        <div class="cartao p-4 mb-4 lateral-inscricao card-projeto-lateral">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge-status-vaga">3 vagas restantes</span>
+                                <span class="text-secondary small fw-bold">Presencial</span>
+                            </div>
+
+                            <h3 class="preco-vaga mb-3">Voluntariado Gratuito</h3>
+
+                            <!-- Detalhes Rápidos -->
+                            <div class="detalhes-rapidos-lateral mb-4">
+                                <div class="d-flex gap-3 align-items-start mb-3">
+                                    <img src="/src/assets/house-regular.png" class="icone-img-lateral mt-1" alt="" />
+                                    <div>
+                                        <h5 class="m-0 text-dark small fw-bold">Localização</h5>
+                                        <p class="m-0 text-secondary small">Campinas, SP (Centro)</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex gap-3 align-items-start mb-3">
+                                    <img src="/src/assets/magnifying-glass-solid.png" class="icone-img-lateral mt-1" alt="" />
+                                    <div>
+                                        <h5 class="m-0 text-dark small fw-bold">Disponibilidade</h5>
+                                        <p class="m-0 text-secondary small">Sábados das 14h às 17h</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex gap-3 align-items-start mb-3">
+                                    <img src="/src/assets/circle-check-regular.png" class="icone-img-lateral mt-1" alt="" />
+                                    <div>
+                                        <h5 class="m-0 text-dark small fw-bold">Duração Estimada</h5>
+                                        <p class="m-0 text-secondary small">Mínimo de 3 meses</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Botão de Inscrição que aciona Modal do Bootstrap -->
+                            <button type="button" class="btn btn-primary w-100 py-3 fw-bold text-white mb-3" data-bs-toggle="modal" data-bs-target="#modalCandidatura">
+                                Quero me candidatar
+                            </button>
+
+                            <p class="text-center text-muted small m-0">A instituição responderá seu perfil em até 48 horas.</p>
+                        </div>
+
+                        <!-- Card Detalhes da Instituição -->
+                        <div class="cartao p-4">
+                            <h4 class="subtitulo-detalhes-lateral mb-3">Sobre a Organização</h4>
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <div class="logo-instituicao-lateral d-flex align-items-center justify-content-center">
+                                    <img src="/src/assets/user-tie-solid.png" class="icone-img-grande-lateral" alt="" />
+                                </div>
+                                <div>
+                                    <h5 class="m-0 text-dark small fw-bold">ONG Letras Vivas</h5>
+                                    <p class="m-0 text-secondary small">Desde 2012 em Campinas</p>
+                                </div>
+                            </div>
+                            <p class="text-secondary small mb-3">Focada no desenvolvimento educacional e social de comunidades vulneráveis da região por meio de projetos de tutoria e leitura.</p>
+                            <div class="contatos-instituicao pt-2 border-top">
+                                <p class="small text-dark mb-1"><strong>E-mail:</strong> contato@letrasvivas.org.br</p>
+                                <p class="small text-dark m-0"><strong>Telefone:</strong> (19) 3256-4899</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Modal de Sucesso da Candidatura -->
+    <div class="modal fade" id="modalCandidatura" tabindex="-1" aria-labelledby="modalCandidaturaLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-3 border-0 shadow-lg">
+                <div class="modal-header border-bottom-0 pb-0">
+                    <button type="button" class="btn-close" data-bs-dash="modal" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center px-4 pb-4 pt-0">
+                    <div class="modal-sucesso-icone mx-auto mb-3 d-flex align-items-center justify-content-center">
+                        <img src="/src/assets/circle-check-regular.png" alt="Sucesso" style="width: 50px; height: 50px;" />
+                    </div>
+                    <h3 class="modal-sucesso-titulo mb-2" id="modalCandidaturaLabel">Candidatura Enviada!</h3>
+                    <p class="text-secondary small mb-4">Seu perfil voluntário foi encaminhado para a <strong>ONG Letras Vivas</strong>. Fique atento às suas notificações e e-mail para mais detalhes de contato.</p>
+                    <div class="d-flex gap-2">
+                        <button type="button" class="btn btn-outline-primary w-100 py-2 fw-bold" data-bs-dismiss="modal">Fechar</button>
+                        <a href="meus-projetos.html" class="btn btn-primary w-100 py-2 fw-bold text-white text-center">Ir para meus projetos</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap Bundle (Versão correta 5.3.3) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+
+</html>

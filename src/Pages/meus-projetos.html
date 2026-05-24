@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Projetos - Projeto Resgate</title>
+    <!-- Bootstrap CSS (Versão correta 5.3.3) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Estilo Geral do Dashboard (Herdado para consistência) -->
+    <link rel="stylesheet" href="../Css/painel-Voluntario.css">
+    <!-- Estilo Específico da página de Meus Projetos -->
+    <link rel="stylesheet" href="../Css/meus-projetos.css">
+</head>
+
+<body>
+    <div id="app" class="container-app">
+        <!-- Barra Lateral -->
+        <aside id="barra-lateral" class="barra-lateral">
+            <div class="logo-barra-lateral">
+                <img src="/src/assets/hand-holding-hand-solid.png" alt="Logo" class="icone-img" />
+                Projeto Resgate
+            </div>
+            <nav class="navegacao-barra-lateral">
+                <ul id="menu-navegacao">
+                    <li>
+                        <a href="landing_page.html" id="link-inicio">
+                            <img src="/src/assets/house-regular.png" alt="Início" class="icone-img" />
+                            Início
+                        </a>
+                    </li>
+                    <li>
+                        <a href="projetos.html" id="link-explorar">
+                            <img src="/src/assets/magnifying-glass-solid.png" alt="Explorar" class="icone-img" />
+                            Explorar Projetos
+                        </a>
+                    </li>
+                    <li class="ativo">
+                        <a href="meus-projetos.html" id="link-meus-projetos">
+                            <img src="/src/assets/circle-check-regular.png" alt="Meus Projetos" class="icone-img" />
+                            Meus Projetos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="painel-Voluntario.html" id="link-perfil">
+                            <img src="/src/assets/user-regular.png" alt="Meu Perfil" class="icone-img" />
+                            Meu Perfil
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="rodape-barra-lateral">
+                <a href="cadastro.html" id="link-sair-conta" class="link-sair">
+                    <img src="/src/assets/circle-xmark-regular.png" alt="Sair" class="icone-img" />
+                    Sair da Conta
+                </a>
+            </div>
+        </aside>
+
+        <!-- Conteúdo Principal -->
+        <div class="conteudo-principal">
+            <!-- Barra Superior -->
+            <header class="barra-superior">
+                <div class="barra-busca">
+                    <img src="/src/assets/magnifying-glass-solid.png" alt="Buscar" class="icone-img" />
+                    <input type="text" id="input-busca" placeholder="Buscar em meus projetos..." />
+                </div>
+                <div class="acoes-barra-superior">
+                    <div id="perfil-usuario-topo" class="perfil-usuario">
+                        <div class="info-usuario">
+                            <span id="nome-usuario-logado" class="nome-usuario">JSON JS</span>
+                            <span class="funcao-usuario">Voluntária</span>
+                        </div>
+                        <div class="avatar-usuario">
+                            <img src="/src/assets/user-regular.png" alt="Avatar" class="icone-img-pequeno" style="margin-right: 0;" />
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Conteúdo da Página -->
+            <main id="conteudo-pagina" class="conteudo-pagina">
+                <div class="migalhas-pao">
+                    <span>Início</span> / <span class="ativo">Meus Projetos</span>
+                </div>
+
+                <div class="cabecalho-pagina mb-4">
+                    <div class="titulo-pagina">
+                        <h1>Meus Projetos</h1>
+                        <p>Acompanhe o andamento das suas candidaturas, interações e contribuições voluntárias</p>
+                    </div>
+                </div>
+
+                <!-- Abas de Filtros de Status (Consistente com painel-Instituicao.html) -->
+                <div id="abas-projetos" class="abas mb-4">
+                    <div id="aba-todos" class="aba ativo">Todos (4)</div>
+                    <div id="aba-andamento" class="aba">Em Andamento (1)</div>
+                    <div id="aba-aguardando" class="aba">Aguardando Início (1)</div>
+                    <div id="aba-concluidos" class="aba">Concluídos (1)</div>
+                    <div id="aba-recusados" class="aba">Recusados (1)</div>
+                </div>
+
+                <!-- Lista de Projetos -->
+                <div class="lista-projetos-voluntario d-flex flex-column gap-3">
+                    <!-- Card 1: Em Andamento -->
+                    <div class="item-projeto-voluntario d-flex align-items-center justify-content-between p-3 border rounded-3 bg-white card-projeto borda-verde">
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="icone-projeto-vol verde d-flex align-items-center justify-content-center">
+                                <img src="/src/assets/hand-holding-hand-solid.png" class="icone-img-grande-vol" alt="" />
+                            </div>
+                            <div class="detalhes-projeto-vol">
+                                <h3 class="m-0 small fw-bold d-flex align-items-center gap-2">
+                                    Leitura para Todos
+                                    <span class="status-badge-vol status-andamento">Em Andamento</span>
+                                </h3>
+                                <p class="text-secondary small m-0 mb-1">ONG Letras Vivas</p>
+                                <div class="meta-projeto-vol d-flex gap-3 text-secondary small">
+                                    <span><img src="/src/assets/house-regular.png" class="icone-img-pequeno" alt="" /> Campinas, SP</span>
+                                    <span>Candidatura: 15/05/2026</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="acoes-projeto-vol d-flex gap-2">
+                            <a href="detalhes-projeto.html" class="btn btn-outline-primary py-2 px-3 fw-bold small">Ver Detalhes</a>
+                            <button type="button" class="btn btn-primary py-2 px-3 fw-bold text-white small" data-bs-toggle="modal" data-bs-target="#modalContatoNGO" data-ngo-name="ONG Letras Vivas" data-ngo-email="contato@letrasvivas.org.br" data-ngo-phone="(19) 3256-4899">
+                                Contato
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Aguardando Início -->
+                    <div class="item-projeto-voluntario d-flex align-items-center justify-content-between p-3 border rounded-3 bg-white card-projeto borda-amarelo">
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="icone-projeto-vol amarelo d-flex align-items-center justify-content-center">
+                                <img src="/src/assets/hand-holding-hand-solid.png" class="icone-img-grande-vol" alt="" />
+                            </div>
+                            <div class="detalhes-projeto-vol">
+                                <h3 class="m-0 small fw-bold d-flex align-items-center gap-2">
+                                    Cozinha Solidária
+                                    <span class="status-badge-vol status-aguardando">Aguardando Início</span>
+                                </h3>
+                                <p class="text-secondary small m-0 mb-1">Ação Comunitária Social</p>
+                                <div class="meta-projeto-vol d-flex gap-3 text-secondary small">
+                                    <span><img src="/src/assets/house-regular.png" class="icone-img-pequeno" alt="" /> Belo Horizonte, MG</span>
+                                    <span>Candidatura: 20/05/2026</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="acoes-projeto-vol d-flex gap-2">
+                            <a href="#" class="btn btn-outline-primary py-2 px-3 fw-bold small">Ver Detalhes</a>
+                            <button type="button" class="btn btn-primary py-2 px-3 fw-bold text-white small" data-bs-toggle="modal" data-bs-target="#modalContatoNGO" data-ngo-name="Ação Comunitária Social" data-ngo-email="apoio@acaosocial.org.br" data-ngo-phone="(31) 3455-9822">
+                                Contato
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Concluído -->
+                    <div class="item-projeto-voluntario d-flex align-items-center justify-content-between p-3 border rounded-3 bg-white card-projeto borda-azul">
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="icone-projeto-vol azul d-flex align-items-center justify-content-center">
+                                <img src="/src/assets/hand-holding-hand-solid.png" class="icone-img-grande-vol" alt="" />
+                            </div>
+                            <div class="detalhes-projeto-vol">
+                                <h3 class="m-0 small fw-bold d-flex align-items-center gap-2">
+                                    Horta Comunitária Vila Nova
+                                    <span class="status-badge-vol status-concluido">Concluído</span>
+                                </h3>
+                                <p class="text-secondary small m-0 mb-1">Instituto Verde Vida</p>
+                                <div class="meta-projeto-vol d-flex gap-3 text-secondary small">
+                                    <span><img src="/src/assets/house-regular.png" class="icone-img-pequeno" alt="" /> São Paulo, SP</span>
+                                    <span>Candidatura: 12/01/2025</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="acoes-projeto-vol d-flex gap-2">
+                            <a href="#" class="btn btn-outline-primary py-2 px-3 fw-bold small">Ver Detalhes</a>
+                            <button type="button" class="btn btn-primary py-2 px-3 fw-bold text-white small" data-bs-toggle="modal" data-bs-target="#modalContatoNGO" data-ngo-name="Instituto Verde Vida" data-ngo-email="info@verdevida.org.br" data-ngo-phone="(11) 5688-4411">
+                                Contato
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Card 4: Recusado -->
+                    <div class="item-projeto-voluntario d-flex align-items-center justify-content-between p-3 border rounded-3 bg-white card-projeto borda-vermelho">
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="icone-projeto-vol vermelho d-flex align-items-center justify-content-center">
+                                <img src="/src/assets/hand-holding-hand-solid.png" class="icone-img-grande-vol" alt="" />
+                            </div>
+                            <div class="detalhes-projeto-vol">
+                                <h3 class="m-0 small fw-bold d-flex align-items-center gap-2">
+                                    Inclusão Digital para Idosos
+                                    <span class="status-badge-vol status-recusado">Candidatura Recusada</span>
+                                </h3>
+                                <p class="text-secondary small m-0 mb-1">Lar de Idosos São José</p>
+                                <div class="meta-projeto-vol d-flex gap-3 text-secondary small">
+                                    <span><img src="/src/assets/house-regular.png" class="icone-img-pequeno" alt="" /> São Paulo, SP</span>
+                                    <span>Candidatura: 10/05/2026</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="acoes-projeto-vol d-flex gap-2">
+                            <a href="#" class="btn btn-outline-primary py-2 px-3 fw-bold small">Ver Detalhes</a>
+                            <button type="button" class="btn btn-outline-secondary py-2 px-3 fw-bold small disabled" disabled>
+                                Indisponível
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Modal de Contato da Instituição -->
+    <div class="modal fade" id="modalContatoNGO" tabindex="-1" aria-labelledby="modalContatoNGOLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-3 border-0 shadow-lg">
+                <div class="modal-header border-bottom pb-3">
+                    <h5 class="modal-title fw-bold text-dark" id="modalContatoNGOLabel">Contato da Organização</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <div class="d-flex align-items-center gap-3 mb-4">
+                        <div class="logo-instituicao-modal d-flex align-items-center justify-content-center">
+                            <img src="/src/assets/user-tie-solid.png" class="icone-img-modal" alt="" />
+                        </div>
+                        <div>
+                            <h4 id="modal-ngo-name" class="m-0 text-dark small fw-bold">ONG Letras Vivas</h4>
+                            <p class="m-0 text-secondary small">Organização Social Parceira</p>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex flex-column gap-3">
+                        <div class="d-flex gap-3 align-items-center">
+                            <img src="/src/assets/envelope-regular.png" class="icone-img-pequeno" alt="" />
+                            <div>
+                                <span class="d-block text-secondary small">E-mail para contato</span>
+                                <strong id="modal-ngo-email" class="text-dark small">contato@letrasvivas.org.br</strong>
+                            </div>
+                        </div>
+                        <div class="d-flex gap-3 align-items-center">
+                            <img src="/src/assets/magnifying-glass-solid.png" class="icone-img-pequeno" alt="" />
+                            <div>
+                                <span class="d-block text-secondary small">Telefone / WhatsApp</span>
+                                <strong id="modal-ngo-phone" class="text-dark small">(19) 3256-4899</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer border-top-0 pt-0">
+                    <button type="button" class="btn btn-primary w-100 py-2 fw-bold text-white" data-bs-dismiss="modal">Fechar janela</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap Bundle (Versão correta 5.3.3) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <!-- Script JavaScript simples (estático e sem IA) para gerenciar o preenchimento dinâmico do Modal -->
+    <script>
+        const modalContato = document.getElementById('modalContatoNGO');
+        if (modalContato) {
+            modalContato.addEventListener('show.bs.modal', function (event) {
+                const button = event.relatedTarget;
+                const ngoName = button.getAttribute('data-ngo-name');
+                const ngoEmail = button.getAttribute('data-ngo-email');
+                const ngoPhone = button.getAttribute('data-ngo-phone');
+                
+                document.getElementById('modal-ngo-name').textContent = ngoName;
+                document.getElementById('modal-ngo-email').textContent = ngoEmail;
+                document.getElementById('modal-ngo-phone').textContent = ngoPhone;
+            });
+        }
+    </script>
+</body>
+
+</html>
