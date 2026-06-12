@@ -214,12 +214,12 @@
                 <img src="/src/assets/user-tie-solid.png" alt="Organização">
             </div>
 
-            <span class="badge-mock">Demonstração — dados não são salvos</span>
+
 
             <h1 class="titulo-form">Cadastrar Organização / ONG</h1>
             <p class="subtitulo-form">Registre sua instituição e conecte-se com voluntários engajados dispostos a ajudar.</p>
 
-            <form id="form-cadastro-ong" action="painel-Instituicao.html" method="GET">
+            <form id="form-cadastro-ong">
                 <div class="row g-3">
                     <div class="col-12">
                         <label for="nome-ong" class="form-label">Nome da Organização</label>
@@ -279,6 +279,46 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="../Js/database.js"></script>
+    <script src="../Js/auth.js"></script>
+    <script>
+        document.getElementById('form-cadastro-ong').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const nome = document.getElementById('nome-ong').value.trim();
+            const cnpj = document.getElementById('cnpj').value.trim();
+            const causa = document.getElementById('causa-ong').value.trim();
+            const responsavel = document.getElementById('responsavel').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const localizacao = document.getElementById('localizacao').value.trim();
+            const senha = document.getElementById('senha').value.trim();
+            
+            if (!nome || !cnpj || !responsavel || !email || !localizacao || !senha) {
+                alert('Por favor, preencha todos os campos obrigatórios.');
+                return;
+            }
+            
+            if (Database.obterOngPorEmailOuCnpj(email) || Database.obterOngPorEmailOuCnpj(cnpj)) {
+                alert('Este E-mail ou CNPJ já está cadastrado em outra Instituição. Tente fazer login.');
+                return;
+            }
+            
+            const ong = {
+                nome: nome,
+                cnpj: cnpj,
+                causa: causa,
+                responsavel: responsavel,
+                email: email,
+                localizacao: localizacao,
+                senha: senha
+            };
+            
+            const salva = Database.salvarOng(ong);
+            alert('Instituição cadastrada com sucesso!');
+            Auth.iniciarSessao('ong', salva);
+            window.location.href = "painel-Instituicao.html";
+        });
+    </script>
 </body>
 
 </html>

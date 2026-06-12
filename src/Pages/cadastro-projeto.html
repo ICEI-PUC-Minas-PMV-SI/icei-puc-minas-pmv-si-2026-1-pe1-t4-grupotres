@@ -190,7 +190,7 @@
 
                 <!-- Formulário -->
                 <div class="cartao-formulario p-4 mt-1">
-                    <form id="form-criar-projeto" action="painel-Instituicao.html" method="GET">
+                    <form id="form-cadastro-projeto">
 
                         <div class="linha-formulario row g-3 mb-3">
                             <div class="col-md-7">
@@ -261,6 +261,52 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="../Js/database.js"></script>
+    <script src="../Js/auth.js"></script>
+    
+    <script>
+        const sessao = Auth.protegerRota();
+        if (sessao && sessao.tipo !== 'ong') {
+            window.location.href = "painel-Voluntario.html";
+        }
+        
+        if (sessao) {
+            document.getElementById('nome-usuario-logado').textContent = sessao.nome;
+        }
+
+        document.getElementById('form-cadastro-projeto').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const titulo = document.getElementById('input-titulo').value.trim();
+            const causa = document.getElementById('input-causa').value.trim();
+            const descricao = document.getElementById('input-descricao').value.trim();
+            const perfil = document.getElementById('input-perfil').value.trim();
+            const local = document.getElementById('input-local').value.trim();
+            const vagas = document.getElementById('input-vagas').value.trim();
+            const email = document.getElementById('input-email').value.trim();
+            
+            if (!titulo || !causa || !descricao || !perfil || !local || !vagas || !email) {
+                alert('Por favor, preencha todos os campos obrigatórios do projeto.');
+                return;
+            }
+            
+            const projeto = {
+                id_ong: sessao.id,
+                titulo: titulo,
+                causa: causa,
+                descricao: descricao,
+                perfil: perfil,
+                localizacao: local,
+                vagas: vagas || 1,
+                email: email,
+                telefone: document.getElementById('input-telefone').value.trim()
+            };
+            
+            Database.salvarProjeto(projeto);
+            alert('Projeto cadastrado com sucesso!');
+            window.location.href = "painel-Instituicao.html";
+        });
+    </script>
 </body>
 
 </html>

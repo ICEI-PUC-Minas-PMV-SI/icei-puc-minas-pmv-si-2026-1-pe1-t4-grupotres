@@ -50,7 +50,7 @@
                 </ul>
             </nav>
             <div class="rodape-barra-lateral">
-                <a href="cadastro.html" id="link-sair-conta" class="link-sair">
+                <a href="#" onclick="Auth.sair(); return false;" id="link-sair-conta" class="link-sair">
                     <img src="/src/assets/circle-xmark-regular.png" alt="Sair" class="icone-img" />
                     Sair da Conta
                 </a>
@@ -91,120 +91,18 @@
                     </div>
                 </div>
 
-                <!-- Abas de Filtros de Status (Consistente com painel-Instituicao.html) -->
+                <!-- Abas de Filtros de Status -->
                 <div id="abas-projetos" class="abas mb-4">
-                    <div id="aba-todos" class="aba ativo">Todos (4)</div>
-                    <div id="aba-andamento" class="aba">Em Andamento (1)</div>
-                    <div id="aba-aguardando" class="aba">Aguardando Início (1)</div>
-                    <div id="aba-concluidos" class="aba">Concluídos (1)</div>
-                    <div id="aba-recusados" class="aba">Recusados (1)</div>
+                    <div id="aba-todos" class="aba ativo">Todos (<span id="count-todos">0</span>)</div>
+                    <div id="aba-andamento" class="aba">Em Andamento (<span id="count-andamento">0</span>)</div>
+                    <div id="aba-aguardando" class="aba">Aguardando Início (<span id="count-aguardando">0</span>)</div>
+                    <div id="aba-concluidos" class="aba">Concluídos (<span id="count-concluidos">0</span>)</div>
+                    <div id="aba-recusados" class="aba">Recusados (<span id="count-recusados">0</span>)</div>
                 </div>
 
                 <!-- Lista de Projetos -->
-                <div class="lista-projetos-voluntario d-flex flex-column gap-3">
-                    <!-- Card 1: Em Andamento -->
-                    <div class="item-projeto-voluntario d-flex align-items-center justify-content-between p-3 border rounded-3 bg-white card-projeto borda-verde">
-                        <div class="d-flex align-items-center gap-3">
-                            <div class="icone-projeto-vol verde d-flex align-items-center justify-content-center">
-                                <img src="/src/assets/hand-holding-hand-solid.png" class="icone-img-grande-vol" alt="" />
-                            </div>
-                            <div class="detalhes-projeto-vol">
-                                <h3 class="m-0 small fw-bold d-flex align-items-center gap-2">
-                                    Leitura para Todos
-                                    <span class="status-badge-vol status-andamento">Em Andamento</span>
-                                </h3>
-                                <p class="text-secondary small m-0 mb-1">ONG Letras Vivas</p>
-                                <div class="meta-projeto-vol d-flex gap-3 text-secondary small">
-                                    <span><img src="/src/assets/house-regular.png" class="icone-img-pequeno" alt="" /> Campinas, SP</span>
-                                    <span>Candidatura: 15/05/2026</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="acoes-projeto-vol d-flex gap-2">
-                            <a href="detalhes-projeto.html" class="btn btn-outline-primary py-2 px-3 fw-bold small">Ver Detalhes</a>
-                            <button type="button" class="btn btn-primary py-2 px-3 fw-bold text-white small" data-bs-toggle="modal" data-bs-target="#modalContatoNGO" data-ngo-name="ONG Letras Vivas" data-ngo-email="contato@letrasvivas.org.br" data-ngo-phone="(19) 3256-4899">
-                                Contato
-                            </button>
-                        </div>
-                    </div>
-
-                    <!-- Card 2: Aguardando Início -->
-                    <div class="item-projeto-voluntario d-flex align-items-center justify-content-between p-3 border rounded-3 bg-white card-projeto borda-amarelo">
-                        <div class="d-flex align-items-center gap-3">
-                            <div class="icone-projeto-vol amarelo d-flex align-items-center justify-content-center">
-                                <img src="/src/assets/hand-holding-hand-solid.png" class="icone-img-grande-vol" alt="" />
-                            </div>
-                            <div class="detalhes-projeto-vol">
-                                <h3 class="m-0 small fw-bold d-flex align-items-center gap-2">
-                                    Cozinha Solidária
-                                    <span class="status-badge-vol status-aguardando">Aguardando Início</span>
-                                </h3>
-                                <p class="text-secondary small m-0 mb-1">Ação Comunitária Social</p>
-                                <div class="meta-projeto-vol d-flex gap-3 text-secondary small">
-                                    <span><img src="/src/assets/house-regular.png" class="icone-img-pequeno" alt="" /> Belo Horizonte, MG</span>
-                                    <span>Candidatura: 20/05/2026</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="acoes-projeto-vol d-flex gap-2">
-                            <a href="#" class="btn btn-outline-primary py-2 px-3 fw-bold small">Ver Detalhes</a>
-                            <button type="button" class="btn btn-primary py-2 px-3 fw-bold text-white small" data-bs-toggle="modal" data-bs-target="#modalContatoNGO" data-ngo-name="Ação Comunitária Social" data-ngo-email="apoio@acaosocial.org.br" data-ngo-phone="(31) 3455-9822">
-                                Contato
-                            </button>
-                        </div>
-                    </div>
-
-                    <!-- Card 3: Concluído -->
-                    <div class="item-projeto-voluntario d-flex align-items-center justify-content-between p-3 border rounded-3 bg-white card-projeto borda-azul">
-                        <div class="d-flex align-items-center gap-3">
-                            <div class="icone-projeto-vol azul d-flex align-items-center justify-content-center">
-                                <img src="/src/assets/hand-holding-hand-solid.png" class="icone-img-grande-vol" alt="" />
-                            </div>
-                            <div class="detalhes-projeto-vol">
-                                <h3 class="m-0 small fw-bold d-flex align-items-center gap-2">
-                                    Horta Comunitária Vila Nova
-                                    <span class="status-badge-vol status-concluido">Concluído</span>
-                                </h3>
-                                <p class="text-secondary small m-0 mb-1">Instituto Verde Vida</p>
-                                <div class="meta-projeto-vol d-flex gap-3 text-secondary small">
-                                    <span><img src="/src/assets/house-regular.png" class="icone-img-pequeno" alt="" /> São Paulo, SP</span>
-                                    <span>Candidatura: 12/01/2025</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="acoes-projeto-vol d-flex gap-2">
-                            <a href="#" class="btn btn-outline-primary py-2 px-3 fw-bold small">Ver Detalhes</a>
-                            <button type="button" class="btn btn-primary py-2 px-3 fw-bold text-white small" data-bs-toggle="modal" data-bs-target="#modalContatoNGO" data-ngo-name="Instituto Verde Vida" data-ngo-email="info@verdevida.org.br" data-ngo-phone="(11) 5688-4411">
-                                Contato
-                            </button>
-                        </div>
-                    </div>
-
-                    <!-- Card 4: Recusado -->
-                    <div class="item-projeto-voluntario d-flex align-items-center justify-content-between p-3 border rounded-3 bg-white card-projeto borda-vermelho">
-                        <div class="d-flex align-items-center gap-3">
-                            <div class="icone-projeto-vol vermelho d-flex align-items-center justify-content-center">
-                                <img src="/src/assets/hand-holding-hand-solid.png" class="icone-img-grande-vol" alt="" />
-                            </div>
-                            <div class="detalhes-projeto-vol">
-                                <h3 class="m-0 small fw-bold d-flex align-items-center gap-2">
-                                    Inclusão Digital para Idosos
-                                    <span class="status-badge-vol status-recusado">Candidatura Recusada</span>
-                                </h3>
-                                <p class="text-secondary small m-0 mb-1">Lar de Idosos São José</p>
-                                <div class="meta-projeto-vol d-flex gap-3 text-secondary small">
-                                    <span><img src="/src/assets/house-regular.png" class="icone-img-pequeno" alt="" /> São Paulo, SP</span>
-                                    <span>Candidatura: 10/05/2026</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="acoes-projeto-vol d-flex gap-2">
-                            <a href="#" class="btn btn-outline-primary py-2 px-3 fw-bold small">Ver Detalhes</a>
-                            <button type="button" class="btn btn-outline-secondary py-2 px-3 fw-bold small disabled" disabled>
-                                Indisponível
-                            </button>
-                        </div>
-                    </div>
+                <div id="lista-minhas-candidaturas" class="lista-projetos-voluntario d-flex flex-column gap-3">
+                    <!-- Candidaturas renderizadas dinamicamente aqui -->
                 </div>
             </main>
         </div>
@@ -253,8 +151,76 @@
         </div>
     </div>
 
-    <!-- Bootstrap Bundle (Versão correta 5.3.3) -->
+    <!-- Bootstrap Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="../Js/database.js"></script>
+    <script src="../Js/auth.js"></script>
+    <script>
+        const sessao = Auth.protegerRota();
+        if (sessao && sessao.tipo !== 'voluntario') {
+            window.location.href = "painel-Instituicao.html";
+        }
+        
+        if (sessao) {
+            document.getElementById('nome-usuario-logado').textContent = sessao.nome;
+            
+            const candidaturas = Database.obterCandidaturas().filter(c => c.id_voluntario === sessao.id);
+            const container = document.getElementById('lista-minhas-candidaturas');
+            
+            if (candidaturas.length === 0) {
+                container.innerHTML = '<p class="text-secondary text-center p-4">Você ainda não se candidatou a nenhum projeto.</p>';
+            } else {
+                let html = '';
+                candidaturas.forEach(c => {
+                    const projeto = Database.obterProjetoPorId(c.id_projeto);
+                    if (!projeto) return;
+                    
+                    const ong = Database.obterOngPorId(projeto.id_ong);
+                    const nomeOng = ong ? ong.nome : 'ONG Desconhecida';
+                    const dataFormatada = c.data ? new Date(c.data).toLocaleDateString('pt-BR') : 'Data não registrada';
+                    
+                    html += `
+                    <div class="item-projeto-voluntario d-flex align-items-center justify-content-between p-3 border rounded-3 bg-white card-projeto borda-azul">
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="icone-projeto-vol azul d-flex align-items-center justify-content-center">
+                                <img src="/src/assets/hand-holding-hand-solid.png" class="icone-img-grande-vol" alt="" />
+                            </div>
+                            <div class="detalhes-projeto-vol">
+                                <h3 class="m-0 small fw-bold d-flex align-items-center gap-2">
+                                    ${projeto.titulo}
+                                    <span class="status-badge-vol status-aguardando">${c.status || 'Pendente'}</span>
+                                </h3>
+                                <p class="text-secondary small m-0 mb-1">${nomeOng}</p>
+                                <div class="meta-projeto-vol d-flex gap-3 text-secondary small">
+                                    <span><img src="/src/assets/house-regular.png" class="icone-img-pequeno" alt="" /> ${projeto.localizacao}</span>
+                                    <span>Candidatura: ${dataFormatada}</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="acoes-projeto-vol d-flex gap-2">
+                            <a href="detalhes-projeto.html?id=${projeto.id}" class="btn btn-outline-primary py-2 px-3 fw-bold small">Ver Detalhes</a>
+                        </div>
+                    </div>`;
+                });
+                container.innerHTML = html;
+                
+                // Atualizar os contadores das abas
+                const counts = {
+                    todos: candidaturas.length,
+                    andamento: candidaturas.filter(c => c.status && c.status.toLowerCase() === 'aprovado').length,
+                    aguardando: candidaturas.filter(c => !c.status || c.status.toLowerCase() === 'pendente').length,
+                    concluidos: candidaturas.filter(c => c.status && c.status.toLowerCase() === 'concluído').length,
+                    recusados: candidaturas.filter(c => c.status && c.status.toLowerCase() === 'recusado').length
+                };
+                
+                document.getElementById('count-todos').textContent = counts.todos;
+                document.getElementById('count-andamento').textContent = counts.andamento;
+                document.getElementById('count-aguardando').textContent = counts.aguardando;
+                document.getElementById('count-concluidos').textContent = counts.concluidos;
+                document.getElementById('count-recusados').textContent = counts.recusados;
+            }
+        }
+    </script>
     
     <!-- Script JavaScript simples (estático e sem IA) para gerenciar o preenchimento dinâmico do Modal -->
     <script>

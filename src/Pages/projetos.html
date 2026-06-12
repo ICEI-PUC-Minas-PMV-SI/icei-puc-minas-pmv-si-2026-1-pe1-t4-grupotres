@@ -8,6 +8,10 @@
     <!-- Bootstrap CSS (Versão correta 5.3.3) -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- Estilo Geral do Dashboard (Herdado para consistência) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../Css/global.css">
     <link rel="stylesheet" href="../Css/painel-Voluntario.css">
     <!-- Estilo Específico da página de Explorar Projetos -->
     <link rel="stylesheet" href="../Css/projetos.css">
@@ -18,40 +22,40 @@
         <!-- Barra Lateral -->
         <aside id="barra-lateral" class="barra-lateral">
             <div class="logo-barra-lateral">
-                <img src="/src/assets/hand-holding-hand-solid.png" alt="Logo" class="icone-img" />
+                <i class="bi bi-heart-pulse-fill" style="color: #1A56DB; font-size: 1.5rem; margin-right: 8px;"></i>
                 Projeto Resgate
             </div>
             <nav class="navegacao-barra-lateral">
                 <ul id="menu-navegacao">
                     <li>
                         <a href="landing_page.html" id="link-inicio">
-                            <img src="/src/assets/house-regular.png" alt="Início" class="icone-img" />
+                            <i class="bi bi-house fs-5 me-2"></i>
                             Início
                         </a>
                     </li>
                     <li class="ativo">
                         <a href="projetos.html" id="link-explorar">
-                            <img src="/src/assets/magnifying-glass-solid.png" alt="Explorar" class="icone-img" />
+                            <i class="bi bi-search fs-5 me-2"></i>
                             Explorar Projetos
                         </a>
                     </li>
                     <li>
                         <a href="meus-projetos.html" id="link-meus-projetos">
-                            <img src="/src/assets/circle-check-regular.png" alt="Meus Projetos" class="icone-img" />
+                            <i class="bi bi-check-circle fs-5 me-2"></i>
                             Meus Projetos
                         </a>
                     </li>
                     <li>
                         <a href="painel-Voluntario.html" id="link-perfil">
-                            <img src="/src/assets/user-regular.png" alt="Meu Perfil" class="icone-img" />
+                            <i class="bi bi-person fs-5 me-2"></i>
                             Meu Perfil
                         </a>
                     </li>
                 </ul>
             </nav>
             <div class="rodape-barra-lateral">
-                <a href="cadastro.html" id="link-sair-conta" class="link-sair">
-                    <img src="/src/assets/circle-xmark-regular.png" alt="Sair" class="icone-img" />
+                <a href="#" onclick="Auth.sair(); return false;" id="link-sair-conta" class="link-sair">
+                    <i class="bi bi-box-arrow-right fs-5 me-2"></i>
                     Sair da Conta
                 </a>
             </div>
@@ -62,7 +66,7 @@
             <!-- Barra Superior -->
             <header class="barra-superior">
                 <div class="barra-busca">
-                    <img src="/src/assets/magnifying-glass-solid.png" alt="Buscar" class="icone-img" />
+                    <i class="bi bi-search fs-5 text-secondary"></i>
                     <input type="text" id="input-busca" placeholder="Buscar projetos por palavra-chave..." />
                 </div>
                 <div class="acoes-barra-superior">
@@ -72,7 +76,7 @@
                             <span class="funcao-usuario">Voluntária</span>
                         </div>
                         <div class="avatar-usuario">
-                            <img src="/src/assets/user-regular.png" alt="Avatar" class="icone-img-pequeno" style="margin-right: 0;" />
+                            <i class="bi bi-person-circle fs-2 text-secondary" style="margin-right: 0;"></i>
                         </div>
                     </div>
                 </div>
@@ -182,132 +186,8 @@
                         </div>
 
                         <!-- Grid de Cards de Projetos -->
-                        <div class="row g-4">
-                            <!-- Projeto 1: Horta Comunitária -->
-                            <div class="col-md-6 col-xl-4">
-                                <div class="cartao h-100 d-flex flex-column card-projeto borda-verde">
-                                    <div class="d-flex justify-content-between align-items-start mb-3">
-                                        <span class="badge-causa verde">
-                                            <img src="/src/assets/hand-holding-hand-solid.png" class="icone-img-pequeno" alt="" />
-                                            Sustentabilidade
-                                        </span>
-                                        <span class="text-secondary small">Presencial</span>
-                                    </div>
-                                    <h3 class="titulo-projeto-card mb-2">Horta Comunitária Vila Nova</h3>
-                                    <p class="nome-instituicao-card text-secondary small mb-3">Instituto Verde Vida</p>
-                                    <p class="descricao-projeto-card text-dark small flex-grow-1">Apoie a estruturação e manutenção de canteiros de hortaliças orgânicas para famílias de baixa renda da comunidade.</p>
-                                    <div class="meta-card mb-3 pt-2 border-top border-light d-flex flex-wrap gap-2 text-secondary small">
-                                        <span><img src="/src/assets/house-regular.png" class="icone-img-pequeno" alt="" /> São Paulo, SP</span>
-                                        <span><img src="/src/assets/user-regular.png" class="icone-img-pequeno" alt="" /> 5 vagas</span>
-                                    </div>
-                                    <a href="detalhes-projeto.html" class="btn btn-outline-primary w-100 fw-bold py-2 mt-auto">Ver Detalhes</a>
-                                </div>
-                            </div>
-
-                            <!-- Projeto 2: Leitura para Todos -->
-                            <div class="col-md-6 col-xl-4">
-                                <div class="cartao h-100 d-flex flex-column card-projeto borda-amarelo">
-                                    <div class="d-flex justify-content-between align-items-start mb-3">
-                                        <span class="badge-causa amarelo">
-                                            <img src="/src/assets/hand-holding-hand-solid.png" class="icone-img-pequeno" alt="" />
-                                            Alfabetização
-                                        </span>
-                                        <span class="text-secondary small">Presencial</span>
-                                    </div>
-                                    <h3 class="titulo-projeto-card mb-2">Leitura para Todos</h3>
-                                    <p class="nome-instituicao-card text-secondary small mb-3">ONG Letras Vivas</p>
-                                    <p class="descricao-projeto-card text-dark small flex-grow-1">Ajude jovens e adultos a darem os primeiros passos na leitura e na escrita através de dinâmicas divertidas de tutoria.</p>
-                                    <div class="meta-card mb-3 pt-2 border-top border-light d-flex flex-wrap gap-2 text-secondary small">
-                                        <span><img src="/src/assets/house-regular.png" class="icone-img-pequeno" alt="" /> Campinas, SP</span>
-                                        <span><img src="/src/assets/user-regular.png" class="icone-img-pequeno" alt="" /> 3 vagas</span>
-                                    </div>
-                                    <a href="detalhes-projeto.html" class="btn btn-outline-primary w-100 fw-bold py-2 mt-auto">Ver Detalhes</a>
-                                </div>
-                            </div>
-
-                            <!-- Projeto 3: Cozinha Solidária -->
-                            <div class="col-md-6 col-xl-4">
-                                <div class="cartao h-100 d-flex flex-column card-projeto borda-vermelho">
-                                    <div class="d-flex justify-content-between align-items-start mb-3">
-                                        <span class="badge-causa vermelho">
-                                            <img src="/src/assets/hand-holding-hand-solid.png" class="icone-img-pequeno" alt="" />
-                                            Combate à Fome
-                                        </span>
-                                        <span class="text-secondary small">Presencial</span>
-                                    </div>
-                                    <h3 class="titulo-projeto-card mb-2">Cozinha Solidária</h3>
-                                    <p class="nome-instituicao-card text-secondary small mb-3">Ação Comunitária Social</p>
-                                    <p class="descricao-projeto-card text-dark small flex-grow-1">Auxilie no preparo e distribuição de refeições nutritivas e saudáveis para a comunidade no centro da cidade.</p>
-                                    <div class="meta-card mb-3 pt-2 border-top border-light d-flex flex-wrap gap-2 text-secondary small">
-                                        <span><img src="/src/assets/house-regular.png" class="icone-img-pequeno" alt="" /> Belo Horizonte, MG</span>
-                                        <span><img src="/src/assets/user-regular.png" class="icone-img-pequeno" alt="" /> 8 vagas</span>
-                                    </div>
-                                    <a href="detalhes-projeto.html" class="btn btn-outline-primary w-100 fw-bold py-2 mt-auto">Ver Detalhes</a>
-                                </div>
-                            </div>
-
-                            <!-- Projeto 4: Inclusão Digital -->
-                            <div class="col-md-6 col-xl-4">
-                                <div class="cartao h-100 d-flex flex-column card-projeto borda-rosa">
-                                    <div class="d-flex justify-content-between align-items-start mb-3">
-                                        <span class="badge-causa rosa">
-                                            <img src="/src/assets/hand-holding-hand-solid.png" class="icone-img-pequeno" alt="" />
-                                            Inclusão Social
-                                        </span>
-                                        <span class="text-secondary small">Presencial</span>
-                                    </div>
-                                    <h3 class="titulo-projeto-card mb-2">Inclusão Digital para Idosos</h3>
-                                    <p class="nome-instituicao-card text-secondary small mb-3">Lar de Idosos São José</p>
-                                    <p class="descricao-projeto-card text-dark small flex-grow-1">Ensine idosos a usarem smartphones, computadores e redes sociais para se comunicarem com a família de forma segura.</p>
-                                    <div class="meta-card mb-3 pt-2 border-top border-light d-flex flex-wrap gap-2 text-secondary small">
-                                        <span><img src="/src/assets/house-regular.png" class="icone-img-pequeno" alt="" /> São Paulo, SP</span>
-                                        <span><img src="/src/assets/user-regular.png" class="icone-img-pequeno" alt="" /> 4 vagas</span>
-                                    </div>
-                                    <a href="detalhes-projeto.html" class="btn btn-outline-primary w-100 fw-bold py-2 mt-auto">Ver Detalhes</a>
-                                </div>
-                            </div>
-
-                            <!-- Projeto 5: Reforço Escolar -->
-                            <div class="col-md-6 col-xl-4">
-                                <div class="cartao h-100 d-flex flex-column card-projeto borda-azul">
-                                    <div class="d-flex justify-content-between align-items-start mb-3">
-                                        <span class="badge-causa verde" style="background-color: #e0f2fe; color: #1e40af; border: 1px solid #bae6fd;">
-                                            <img src="/src/assets/hand-holding-hand-solid.png" class="icone-img-pequeno" alt="" />
-                                            Educação
-                                        </span>
-                                        <span class="text-secondary small">Remoto</span>
-                                    </div>
-                                    <h3 class="titulo-projeto-card mb-2">Reforço Escolar de Matemática</h3>
-                                    <p class="nome-instituicao-card text-secondary small mb-3">Associação Educar Mais</p>
-                                    <p class="descricao-projeto-card text-dark small flex-grow-1">Dê aulas particulares online de matemática para crianças do ensino fundamental que estão com dificuldades na escola.</p>
-                                    <div class="meta-card mb-3 pt-2 border-top border-light d-flex flex-wrap gap-2 text-secondary small">
-                                        <span><img src="/src/assets/house-regular.png" class="icone-img-pequeno" alt="" /> Belo Horizonte, MG</span>
-                                        <span><img src="/src/assets/user-regular.png" class="icone-img-pequeno" alt="" /> 6 vagas</span>
-                                    </div>
-                                    <a href="detalhes-projeto.html" class="btn btn-outline-primary w-100 fw-bold py-2 mt-auto">Ver Detalhes</a>
-                                </div>
-                            </div>
-
-                            <!-- Projeto 6: Mutirão de Reflorestamento -->
-                            <div class="col-md-6 col-xl-4">
-                                <div class="cartao h-100 d-flex flex-column card-projeto borda-verde">
-                                    <div class="d-flex justify-content-between align-items-start mb-3">
-                                        <span class="badge-causa verde">
-                                            <img src="/src/assets/hand-holding-hand-solid.png" class="icone-img-pequeno" alt="" />
-                                            Sustentabilidade
-                                        </span>
-                                        <span class="text-secondary small">Presencial</span>
-                                    </div>
-                                    <h3 class="titulo-projeto-card mb-2">Reflorestamento Urbano</h3>
-                                    <p class="nome-instituicao-card text-secondary small mb-3">SOS Natureza e Clima</p>
-                                    <p class="descricao-projeto-card text-dark small flex-grow-1">Participe do plantio de mudas nativas da Mata Atlântica em praças e margens de córregos da cidade no fim de semana.</p>
-                                    <div class="meta-card mb-3 pt-2 border-top border-light d-flex flex-wrap gap-2 text-secondary small">
-                                        <span><img src="/src/assets/house-regular.png" class="icone-img-pequeno" alt="" /> Curitiba, PR</span>
-                                        <span><img src="/src/assets/user-regular.png" class="icone-img-pequeno" alt="" /> 15 vagas</span>
-                                    </div>
-                                    <a href="detalhes-projeto.html" class="btn btn-outline-primary w-100 fw-bold py-2 mt-auto">Ver Detalhes</a>
-                                </div>
-                            </div>
+                        <div class="row g-4" id="lista-projetos-dinamica">
+                            <!-- Projetos renderizados via JS -->
                         </div>
                     </div>
                 </div>
@@ -316,6 +196,46 @@
     </div>
     <!-- Bootstrap Bundle (Versão correta 5.3.3) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="../Js/database.js"></script>
+    <script src="../Js/auth.js"></script>
+    <script>
+        const sessao = Auth.obterSessao();
+        if (sessao) {
+            document.getElementById('nome-usuario-logado').textContent = sessao.nome;
+            // Se for ONG, esconde a opção "Meus Projetos" do menu se houver necessidade.
+        }
+
+        const projetos = Database.obterProjetos();
+        const container = document.getElementById('lista-projetos-dinamica');
+        
+        let html = '';
+        projetos.forEach(p => {
+            const ong = Database.obterOngPorId(p.id_ong);
+            const nomeOng = ong ? ong.nome : 'ONG Desconhecida';
+            
+            html += `
+            <div class="col-md-6 col-xl-4">
+                <div class="cartao h-100 d-flex flex-column card-projeto borda-azul">
+                    <div class="d-flex justify-content-between align-items-start mb-3">
+                        <span class="badge-causa verde">
+                            <i class="bi bi-heart text-white me-1"></i> ${p.causa}
+                        </span>
+                    </div>
+                    <h3 class="titulo-projeto-card mb-2">${p.titulo}</h3>
+                    <p class="nome-instituicao-card text-secondary small mb-3">${nomeOng}</p>
+                    <p class="descricao-projeto-card text-dark small flex-grow-1">${p.descricao}</p>
+                    <div class="meta-card mb-3 pt-2 border-top border-light d-flex flex-wrap gap-2 text-secondary small">
+                        <span><i class="bi bi-geo-alt text-secondary me-1"></i> ${p.localizacao}</span>
+                        <span><i class="bi bi-person text-secondary me-1"></i> ${p.vagas} vagas</span>
+                    </div>
+                    <a href="detalhes-projeto.html?id=${p.id}" class="btn btn-outline-primary w-100 fw-bold py-2 mt-auto">Ver Detalhes</a>
+                </div>
+            </div>`;
+        });
+        
+        container.innerHTML = html;
+        document.querySelector('.text-secondary.small').textContent = `Mostrando ${projetos.length} oportunidades encontradas`;
+    </script>
 </body>
 
 </html>

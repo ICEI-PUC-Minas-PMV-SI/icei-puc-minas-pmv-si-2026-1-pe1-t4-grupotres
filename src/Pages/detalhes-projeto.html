@@ -102,8 +102,8 @@
                             <img src="/src/assets/hand-holding-hand-solid.png" class="icone-img-pequeno" alt="" />
                             Alfabetização
                         </span>
-                        <h1 class="text-white mb-2 text-shadow-sm fw-bold">Leitura para Todos</h1>
-                        <p class="text-white-50 m-0 text-shadow-sm">Organizado por: <strong>ONG Letras Vivas</strong></p>
+                        <h1 id="detalhe-titulo" class="text-white mb-2 text-shadow-sm fw-bold">Carregando...</h1>
+                        <p class="text-white-50 m-0 text-shadow-sm">Organizado por: <strong id="detalhe-nome-ong">...</strong></p>
                     </div>
                 </div>
 
@@ -114,8 +114,7 @@
                         <!-- Seção 1: Descrição do Projeto -->
                         <div class="cartao p-4 mb-4">
                             <h2 class="titulo-cartao-detalhes mb-3">Sobre o Projeto</h2>
-                            <p class="texto-corpo">O projeto <strong>Leitura para Todos</strong> é focado em transformar vidas por meio da alfabetização e incentivo à leitura para jovens e adultos que não tiveram a oportunidade de estudar na idade adequada.</p>
-                            <p class="texto-corpo">Nossa missão é combater a exclusão social promovendo a autonomia por meio da alfabetização básica e da compreensão de textos do dia a dia (leitura de placas, bulas, contratos e notícias). As aulas ocorrem aos sábados à tarde de forma dinâmica, acolhedora e respeitando o tempo de aprendizado de cada aluno.</p>
+                            <p id="detalhe-descricao" class="texto-corpo">Carregando detalhes do projeto...</p>
                         </div>
 
                         <!-- Seção 2: Atividades Desenvolvidas -->
@@ -194,7 +193,7 @@
                         <!-- Card de Inscrição Rápida -->
                         <div class="cartao p-4 mb-4 lateral-inscricao card-projeto-lateral">
                             <div class="d-flex justify-content-between align-items-center mb-3">
-                                <span class="badge-status-vaga">3 vagas restantes</span>
+                                <span class="badge-status-vaga" id="detalhe-vagas">...</span>
                                 <span class="text-secondary small fw-bold">Presencial</span>
                             </div>
 
@@ -206,27 +205,20 @@
                                     <img src="/src/assets/house-regular.png" class="icone-img-lateral mt-1" alt="" />
                                     <div>
                                         <h5 class="m-0 text-dark small fw-bold">Localização</h5>
-                                        <p class="m-0 text-secondary small">Campinas, SP (Centro)</p>
+                                        <p class="m-0 text-secondary small" id="detalhe-localizacao">...</p>
                                     </div>
                                 </div>
                                 <div class="d-flex gap-3 align-items-start mb-3">
-                                    <img src="/src/assets/magnifying-glass-solid.png" class="icone-img-lateral mt-1" alt="" />
+                                    <img src="/src/assets/user-regular.png" class="icone-img-lateral mt-1" alt="" />
                                     <div>
-                                        <h5 class="m-0 text-dark small fw-bold">Disponibilidade</h5>
-                                        <p class="m-0 text-secondary small">Sábados das 14h às 17h</p>
-                                    </div>
-                                </div>
-                                <div class="d-flex gap-3 align-items-start mb-3">
-                                    <img src="/src/assets/circle-check-regular.png" class="icone-img-lateral mt-1" alt="" />
-                                    <div>
-                                        <h5 class="m-0 text-dark small fw-bold">Duração Estimada</h5>
-                                        <p class="m-0 text-secondary small">Mínimo de 3 meses</p>
+                                        <h5 class="m-0 text-dark small fw-bold">Perfil Requisitado</h5>
+                                        <p class="m-0 text-secondary small" id="detalhe-perfil">...</p>
                                     </div>
                                 </div>
                             </div>
 
                             <!-- Botão de Inscrição que aciona Modal do Bootstrap -->
-                            <button type="button" class="btn btn-primary w-100 py-3 fw-bold text-white mb-3" data-bs-toggle="modal" data-bs-target="#modalCandidatura">
+                            <button type="button" id="btn-candidatar" class="btn btn-primary w-100 py-3 fw-bold text-white mb-3">
                                 Quero me candidatar
                             </button>
 
@@ -241,14 +233,12 @@
                                     <img src="/src/assets/user-tie-solid.png" class="icone-img-grande-lateral" alt="" />
                                 </div>
                                 <div>
-                                    <h5 class="m-0 text-dark small fw-bold">ONG Letras Vivas</h5>
-                                    <p class="m-0 text-secondary small">Desde 2012 em Campinas</p>
+                                    <h5 class="m-0 text-dark small fw-bold" id="detalhe-ong-nome-rodape">...</h5>
                                 </div>
                             </div>
-                            <p class="text-secondary small mb-3">Focada no desenvolvimento educacional e social de comunidades vulneráveis da região por meio de projetos de tutoria e leitura.</p>
                             <div class="contatos-instituicao pt-2 border-top">
-                                <p class="small text-dark mb-1"><strong>E-mail:</strong> contato@letrasvivas.org.br</p>
-                                <p class="small text-dark m-0"><strong>Telefone:</strong> (19) 3256-4899</p>
+                                <p class="small text-dark mb-1"><strong>E-mail:</strong> <span id="detalhe-ong-email">...</span></p>
+                                <p class="small text-dark m-0"><strong>Telefone:</strong> <span id="detalhe-ong-telefone">...</span></p>
                             </div>
                         </div>
                     </div>
@@ -281,6 +271,64 @@
 
     <!-- Bootstrap Bundle (Versão correta 5.3.3) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="../Js/database.js"></script>
+    <script src="../Js/auth.js"></script>
+    <script>
+        // Preenche o cabeçalho se houver sessão
+        const sessao = Auth.obterSessao();
+        if (sessao) {
+            document.getElementById('nome-usuario-logado').textContent = sessao.nome;
+        }
+
+        const urlParams = new URLSearchParams(window.location.search);
+        const idProjeto = urlParams.get('id');
+        const projeto = Database.obterProjetoPorId(idProjeto);
+
+        if (projeto) {
+            const ong = Database.obterOngPorId(projeto.id_ong);
+            
+            document.getElementById('detalhe-titulo').textContent = projeto.titulo;
+            document.getElementById('detalhe-descricao').textContent = projeto.descricao;
+            document.getElementById('detalhe-vagas').textContent = projeto.vagas + ' vagas';
+            document.getElementById('detalhe-localizacao').textContent = projeto.localizacao;
+            document.getElementById('detalhe-perfil').textContent = projeto.perfil || 'Não especificado';
+            
+            if (ong) {
+                document.getElementById('detalhe-nome-ong').textContent = ong.nome;
+                document.getElementById('detalhe-ong-nome-rodape').textContent = ong.nome;
+                document.getElementById('detalhe-ong-email').textContent = ong.email;
+                document.getElementById('detalhe-ong-telefone').textContent = projeto.telefone || '(Sem telefone)';
+            }
+            
+            document.getElementById('btn-candidatar').addEventListener('click', function() {
+                if (!sessao) {
+                    alert('Você precisa estar logado como voluntário para se candidatar.');
+                    window.location.href = 'cadastro.html';
+                    return;
+                }
+                if (sessao.tipo !== 'voluntario') {
+                    alert('Apenas voluntários podem se candidatar a projetos.');
+                    return;
+                }
+                
+                const jaCandidatou = Database.obterCandidaturasPorVoluntario(sessao.id).find(c => c.id_projeto === projeto.id);
+                if (jaCandidatou) {
+                    alert('Você já se candidatou a este projeto! Acompanhe o status no painel "Meus Projetos".');
+                    return;
+                }
+                
+                Database.salvarCandidatura({
+                    id_voluntario: sessao.id,
+                    id_projeto: projeto.id
+                });
+                
+                const modal = new bootstrap.Modal(document.getElementById('modalCandidatura'));
+                modal.show();
+            });
+        } else {
+            document.getElementById('conteudo-pagina').innerHTML = '<div class="alert alert-danger">Projeto não encontrado.</div>';
+        }
+    </script>
 </body>
 
 </html>

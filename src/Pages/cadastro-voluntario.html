@@ -219,12 +219,12 @@
                 <img src="/src/assets/user-regular.png" alt="Voluntário">
             </div>
 
-            <span class="badge-mock">Demonstração — dados não são salvos</span>
+
 
             <h1 class="titulo-form">Criar Conta de Voluntário</h1>
             <p class="subtitulo-form">Cadastre-se gratuitamente e encontre projetos sociais alinhados com suas habilidades.</p>
 
-            <form id="form-cadastro-voluntario" action="painel-Voluntario.html" method="GET">
+            <form id="form-cadastro-voluntario">
                 <div class="row g-3">
                     <div class="col-12">
                         <label for="nome" class="form-label">Nome Completo</label>
@@ -284,6 +284,44 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="../Js/database.js"></script>
+    <script src="../Js/auth.js"></script>
+    <script>
+        document.getElementById('form-cadastro-voluntario').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const nome = document.getElementById('nome').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const senha = document.getElementById('senha').value.trim();
+            const cidade = document.getElementById('cidade').value.trim();
+            const habilidade = document.getElementById('habilidade').value.trim();
+            const causa = document.getElementById('causa').value.trim();
+            
+            if (!nome || !email || !senha || !cidade) {
+                alert('Por favor, preencha todos os campos obrigatórios.');
+                return;
+            }
+            
+            if (Database.obterVoluntarioPorEmail(email)) {
+                alert('Este e-mail já está em uso por outro voluntário. Tente fazer login.');
+                return;
+            }
+            
+            const voluntario = {
+                nome: nome,
+                email: email,
+                senha: senha,
+                cidade: cidade,
+                habilidade: habilidade,
+                causa: causa
+            };
+            
+            const salvo = Database.salvarVoluntario(voluntario);
+            alert('Conta criada com sucesso!');
+            Auth.iniciarSessao('voluntario', salvo);
+            window.location.href = "painel-Voluntario.html";
+        });
+    </script>
 </body>
 
 </html>
