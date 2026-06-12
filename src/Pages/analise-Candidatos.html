@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../Css/analise-Candidatos.css">
     <title>Análise de Candidatos - Projeto Resgate</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 
 <body>
@@ -19,31 +19,31 @@
             <nav class="navegacao-barra-lateral">
                 <ul id="menu-navegacao">
                     <li>
-                        <a href="#" id="link-inicio">
+                        <a href="landing_page.html" id="link-inicio">
                             <img src="/src/assets/house-regular.png" alt="Início" class="icone-img">
                             Início
                         </a>
                     </li>
                     <li>
-                        <a href="#" id="link-explorar">
+                        <a href="projetos.html" id="link-explorar">
                             <img src="/src/assets/magnifying-glass-solid.png" alt="Explorar"
                                  class="icone-img"> Explorar Projetos
                         </a>
                     </li>
                     <li class="ativo">
-                        <a href="#" id="link-painel-instituicao">
+                        <a href="painel-Instituicao.html" id="link-painel-instituicao">
                             <img src="/src/assets/user-tie-solid.png"
                                  alt="Instituição" class="icone-img"> Painel da Instituição
                         </a>
                     </li>
                     <li>
-                        <a href="#" id="link-meus-projetos">
+                        <a href="painel-Instituicao.html#lista-projetos-vinculados" id="link-meus-projetos">
                             <img src="/src/assets/circle-check-regular.png" alt="Projetos"
                                  class="icone-img"> Meus Projetos
                         </a>
                     </li>
                     <li>
-                        <a href="#" id="link-criar-projeto">
+                        <a href="cadastro-projeto.html" id="link-criar-projeto">
                             <img src="/src/assets/circle-check-regular.png" alt="Criar"
                                  class="icone-img"> Criar Projeto
                         </a>
@@ -51,9 +51,8 @@
                 </ul>
             </nav>
             <div class="rodape-barra-lateral">
-                <a href="#" id="link-sair-conta" class="link-sair">
-                    <img src="/src/assets/circle-xmark-regular.png" alt="Sair"
-                         class="icone-img"> Sair da Conta
+                <a href="#" onclick="Auth.sair(); return false;" id="link-sair-conta" class="link-sair">
+                    <img src="/src/assets/circle-xmark-regular.png" alt="Sair" class="icone-img" /> Sair da Conta
                 </a>
             </div>
         </aside>
@@ -67,7 +66,7 @@
                     <input type="text" id="input-busca" placeholder="Buscar projetos, instituições ou voluntários...">
                 </div>
                 <div class="acoes-barra-superior">
-                    <button id="btn-novo-projeto-topo" class="btn-primario">Novo Projeto</button>
+                    <a href="cadastro-projeto.html" id="btn-novo-projeto-topo" class="btn-primario" style="text-decoration: none;">Novo Projeto</a>
                     <div id="perfil-usuario-topo" class="perfil-usuario">
                         <div class="info-usuario">
                             <span id="nome-usuario-logado" class="nome-usuario">JSON JS</span>
@@ -92,147 +91,93 @@
                     </div>
                 </div>
 
-                <!-- Info Projeto -->
-                <div class="info-projeto-analise">
-                    <div class="icone-projeto-analise">
-                        <img src="/src/assets/user-tie-solid.png" alt="Instituição">
-                    </div>
-                    <h2>Alfabetização para Adultos — Comunidade Sol Nascente</h2>
-                </div>
-
-                <!-- Cartão Candidato -->
-                <div class="cartao-candidato">
-                    <!-- Secao 1: Dados Cadastrais -->
-                    <div class="secao-candidato">
-                        <div class="acoes-candidato">
-                            <button class="btn-aprovar">
-                                <img src="/src/assets/circle-check-regular.png" class="icone-img">
-                                Aprova Candidato
-                            </button>
-                            <button class="btn-recusar">
-                                <img src="/src/assets/circle-xmark-regular.png" class="icone-img">
-                                Recusar Candidato
-                            </button>
-                        </div>
-
-                        <div class="conteudo-dados">
-                            <div class="foto-candidato">
-                                <img src="" alt="">
-                            </div>
-                            <div class="dados-cadastrais-grid">
-                                <h3 class="titulo-secao-interna" style="grid-column: 1 / -1; margin-bottom: 0;">
-                                    Dados
-                                    Cadastrais
-                                </h3>
-
-                                <div class="grupo-dado">
-                                    <label>Nome completo</label>
-                                    <input type="text" value="Lorem" readonly>
-                                </div>
-                                <div class="grupo-dado">
-                                    <label>E-mail</label>
-                                    <input type="email" value="Lorem" readonly>
-                                </div>
-                                <div class="grupo-dado">
-                                    <label>Telefone</label>
-                                    <input type="text" value="(11) 99999-9999" readonly>
-                                </div>
-                                <div class="grupo-dado">
-                                    <label>Localização</label>
-                                    <input type="text" value="São Paulo, SP" readonly>
-                                </div>
-                                <div class="grupo-dado">
-                                    <label>Data de nascimento</label>
-                                    <input type="text" value="15/03/1995" readonly>
-                                </div>
-                                <div class="grupo-dado">
-                                    <label>Gênero</label>
-                                    <input type="text" value="Sla" readonly>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <hr class="divisor">
-
-                    <!-- Secao 2: Biografia -->
-                    <div class="secao-candidato">
-                        <h3 class="titulo-secao-interna">Biografia</h3>
-                        <div class="caixa-biografia">
-                            <p>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel sed quasi recusandae,
-                                repudiandae qui sunt illum, quos dolorum facilis dolore cum harum sit. Perferendis et
-                                nisi consectetur provident facere! Dignissimos.
-                            </p>
-                        </div>
-                    </div>
-
-                    <hr class="divisor">
-
-                    <!-- Secao 3: Areas e Habilidades -->
-                    <div class="secao-candidato grade-2-col">
-                        <div class="coluna-dado borda-direita">
-                            <h3 class="titulo-secao-interna">Áreas de Interesse</h3>
-                            <div class="lista-tags">
-                                <span class="tag-texto azul">Educação</span>
-                                <span class="tag-texto azul">Saúde Comunitária</span>
-                                <span class="tag-texto azul">Meio Ambiente</span>
-                                <span class="tag-texto azul">Direitos Humanos</span>
-                            </div>
-                        </div>
-                        <div class="coluna-dado padding-esquerda">
-                            <h3 class="titulo-secao-interna">Habilidades</h3>
-                            <div class="lista-tags">
-                                <span class="tag-texto azul">Ensino e Tutoria</span>
-                                <span class="tag-texto azul">Organização de Eventos</span>
-                                <span class="tag-texto azul">Comunicação</span>
-                                <span class="tag-texto azul">Design Gráfico</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <hr class="divisor">
-
-                    <!-- Secao 4: Disponibilidade e Causas -->
-                    <div class="secao-candidato grade-2-col">
-                        <div class="coluna-dado borda-direita">
-                            <h3 class="titulo-secao-interna">Disponibilidade</h3>
-                            <ul class="lista-disponibilidade">
-                                <li>Manhãs nos finais de semana</li>
-                                <li>Tardes durante a semana</li>
-                                <li>Noites durante a semana</li>
-                                <li>Remoto / Online</li>
-                            </ul>
-                        </div>
-                        <div class="coluna-dado padding-esquerda">
-                            <h3 class="titulo-secao-interna">Causas Preferidas</h3>
-                            <div class="grid-causas">
-                                <span class="tag-causa verde">
-                                    <img src="/src/assets/leaf-solid.png" class="icone-img-pequeno"
-                                         onerror="this.src='/src/assets/hand-holding-hand-solid.png'"> Sustentabilidade
-                                </span>
-                                <span class="tag-causa amarelo">
-                                    <img src="/src/assets/book-solid.png" class="icone-img-pequeno"
-                                         onerror="this.src='/src/assets/hand-holding-hand-solid.png'"> Alfabetização
-                                </span>
-                                <span class="tag-causa roxo">
-                                    <img src="/src/assets/heart-solid.png" class="icone-img-pequeno"
-                                         onerror="this.src='/src/assets/hand-holding-hand-solid.png'"> Inclusão Social
-                                </span>
-                                <span class="tag-causa vermelho">
-                                    <img src="/src/assets/utensils-solid.png"
-                                         class="icone-img-pequeno" onerror="this.src='/src/assets/hand-holding-hand-solid.png'">
-                                    Combate à Fome
-                                </span>
-                            </div>
-                        </div>
-                    </div>
+                <div id="lista-candidatos-analise">
+                    <!-- Candidatos serão renderizados aqui -->
                 </div>
 
             </main>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="../Js/database.js"></script>
+    <script src="../Js/auth.js"></script>
+    
+    <script>
+        const sessao = Auth.protegerRota();
+        if (sessao && sessao.tipo !== 'ong') {
+            window.location.href = "painel-Voluntario.html";
+        }
+        
+        if (sessao) {
+            document.getElementById('nome-usuario-logado').textContent = sessao.nome;
+            
+            const container = document.getElementById('lista-candidatos-analise');
+            const projetosDaOng = Database.obterProjetosPorOng(sessao.id);
+            const idsProjetos = projetosDaOng.map(p => p.id);
+            
+            const todasCandidaturas = Database.obterCandidaturas();
+            const candidaturasParaOng = todasCandidaturas.filter(c => idsProjetos.includes(c.id_projeto) && (!c.status || c.status === 'Pendente'));
+            
+            if (candidaturasParaOng.length === 0) {
+                container.innerHTML = '<p style="padding:20px; color:#6b7280; text-align:center;">Não há candidaturas pendentes no momento.</p>';
+            } else {
+                let html = '';
+                candidaturasParaOng.forEach(cand => {
+                    const projeto = projetosDaOng.find(p => p.id === cand.id_projeto);
+                    const voluntario = Database.obterVoluntarioPorEmail(Database.obterVoluntarioPorId(cand.id_voluntario)?.email || ''); 
+                    // Como não temos busca direta por id de voluntario sem email no Database mockado, tentamos algo simples. 
+                    // Na real database salva email, vamos buscar todos voluntarios:
+                    const volObj = Database.obterVoluntarios().find(v => v.id === cand.id_voluntario);
+                    const nomeVol = volObj ? volObj.nome : 'Voluntário Desconhecido';
+                    const emailVol = volObj ? volObj.email : '';
+                    
+                    html += `
+                    <div class="info-projeto-analise" style="margin-top: 30px;">
+                        <div class="icone-projeto-analise">
+                            <img src="/src/assets/hand-holding-hand-solid.png" alt="Instituição">
+                        </div>
+                        <h2>Projeto: ${projeto ? projeto.titulo : 'Desconhecido'}</h2>
+                    </div>
+
+                    <div class="cartao-candidato" id="candidatura-${cand.id}">
+                        <div class="secao-candidato">
+                            <div class="acoes-candidato">
+                                <button class="btn-aprovar" onclick="atualizarStatus(${cand.id}, 'Aprovado')">
+                                    <img src="/src/assets/circle-check-regular.png" class="icone-img"> Aprova Candidato
+                                </button>
+                                <button class="btn-recusar" onclick="atualizarStatus(${cand.id}, 'Recusado')">
+                                    <img src="/src/assets/circle-xmark-regular.png" class="icone-img"> Recusar Candidato
+                                </button>
+                            </div>
+
+                            <div class="conteudo-dados">
+                                <div class="dados-cadastrais-grid">
+                                    <h3 class="titulo-secao-interna" style="grid-column: 1 / -1; margin-bottom: 0;">Dados Cadastrais</h3>
+                                    <div class="grupo-dado">
+                                        <label>Nome completo</label>
+                                        <input type="text" value="${nomeVol}" readonly>
+                                    </div>
+                                    <div class="grupo-dado">
+                                        <label>E-mail</label>
+                                        <input type="email" value="${emailVol}" readonly>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+                });
+                container.innerHTML = html;
+            }
+        }
+        
+        function atualizarStatus(idCandidatura, status) {
+            Database.atualizarStatusCandidatura(idCandidatura, status);
+            const el = document.getElementById('candidatura-' + idCandidatura);
+            if(el) {
+                el.innerHTML = '<p style="padding:20px; color:#047857;">Status atualizado para: ' + status + '</p>';
+            }
+        }
+    </script>
 </body>
 
 </html>
