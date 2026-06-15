@@ -103,6 +103,14 @@ const Database = {
         return this.obterProjetos().find(p => p.id === id);
     },
 
+    excluirProjeto(id) {
+        const projetos = this.obterProjetos().filter(p => p.id !== id);
+        this._salvar(DB_KEYS.PROJETOS, projetos);
+        // Limpar candidaturas vinculadas ao projeto excluído
+        const candidaturas = this.obterCandidaturas().filter(c => c.id_projeto !== id);
+        this._salvar(DB_KEYS.CANDIDATURAS, candidaturas);
+    },
+
     // --- Candidaturas ---
     obterCandidaturas() {
         return this._ler(DB_KEYS.CANDIDATURAS);

@@ -282,13 +282,26 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="acoes-projeto" style="align-items: center;">
-                                <a href="analise-Candidatos.html" class="btn-primario" style="padding: 8px 16px; text-decoration: none;">Analisar Candidatos</a>
-                                <button class="btn-contorno btn-editar-projeto">Editar</button>
+                            <div class="acoes-projeto" style="align-items: center; gap: 8px; flex-wrap: wrap;">
+                                <a href="detalhes-projeto.html?id=${p.id}" class="btn-primario" style="padding: 8px 16px; text-decoration: none;"><i class="bi bi-eye me-1"></i>Ver Detalhes</a>
+                                <a href="cadastro-projeto.html?edit=${p.id}" class="btn-contorno" style="padding: 8px 16px; text-decoration: none;"><i class="bi bi-pencil me-1"></i>Editar</a>
+                                <button class="btn-contorno btn-excluir-projeto" data-id="${p.id}" style="padding: 8px 16px; color: #DC2626; border-color: #DC2626;"><i class="bi bi-trash me-1"></i>Excluir</button>
                             </div>
                         </div>`;
                     });
                     containerProjetos.innerHTML = html;
+                    
+                    // Event listeners para exclusão
+                    document.querySelectorAll('.btn-excluir-projeto').forEach(btn => {
+                        btn.addEventListener('click', function() {
+                            const id = this.getAttribute('data-id');
+                            if (confirm('Tem certeza que deseja excluir este projeto? Todas as candidaturas vinculadas também serão removidas. Esta ação não pode ser desfeita.')) {
+                                Database.excluirProjeto(id);
+                                alert('Projeto excluído com sucesso!');
+                                window.location.reload();
+                            }
+                        });
+                    });
                 }
                 
                 // Contadores dinâmicos

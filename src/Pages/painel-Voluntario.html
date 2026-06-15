@@ -98,9 +98,6 @@
                                     <div class="avatar-grande">
                                         <i class="bi bi-person-circle fs-2 text-secondary"></i>
                                     </div>
-                                    <button id="btn-alterar-foto" class="btn-link">
-                                        Alterar foto
-                                    </button>
                                 </div>
                                 <form id="form-dados-cadastrais" class="grade-formulario">
                                     <div class="grupo-formulario">
@@ -242,8 +239,8 @@
                             <div id="lista-projetos-historico" class="lista-historico">
                                 <div class="item-historico">
                                     <div class="info-historico">
-                                        <div class="img-historico">
-                                            <img src="" alt="Projeto" />
+                                        <div class="img-historico" style="display: flex; align-items: center; justify-content: center; background-color: #f3f4f6; border-radius: 8px;">
+                                            <i class="bi bi-folder-fill fs-3 text-secondary"></i>
                                         </div>
                                         <div class="detalhes-historico">
                                             <h4>Horta Comunitária Vila Nova</h4>
@@ -254,8 +251,8 @@
                                 </div>
                                 <div class="item-historico">
                                     <div class="info-historico">
-                                        <div class="img-historico">
-                                            <img src="" alt="Projeto" />
+                                        <div class="img-historico" style="display: flex; align-items: center; justify-content: center; background-color: #f3f4f6; border-radius: 8px;">
+                                            <i class="bi bi-folder-fill fs-3 text-secondary"></i>
                                         </div>
                                         <div class="detalhes-historico">
                                             <h4>Leitura para Todos</h4>
@@ -294,6 +291,55 @@
                 document.getElementById('input-localizacao').value = voluntario.cidade || '';
             }
         }
+
+        // Lógica de Edição de Perfil do Voluntário
+        const btnEditarPerfil = document.getElementById('btn-editar-perfil');
+        const formInputs = document.querySelectorAll('#form-dados-cadastrais .controle-formulario');
+        let editando = false;
+
+        btnEditarPerfil.addEventListener('click', function() {
+            editando = !editando;
+            if (editando) {
+                btnEditarPerfil.textContent = 'Salvar Alterações';
+                btnEditarPerfil.style.backgroundColor = '#1A56DB';
+                btnEditarPerfil.style.color = 'white';
+                btnEditarPerfil.style.borderColor = '#1A56DB';
+                
+                formInputs.forEach(input => {
+                    input.removeAttribute('readonly');
+                    input.style.backgroundColor = 'white';
+                    input.style.border = '1px solid #ccc';
+                });
+            } else {
+                btnEditarPerfil.textContent = 'Editar Perfil';
+                btnEditarPerfil.style.backgroundColor = '';
+                btnEditarPerfil.style.color = '';
+                btnEditarPerfil.style.borderColor = '';
+                
+                // Salva alterações no localstorage
+                if (sessao && sessao.email) {
+                    const voluntarios = JSON.parse(localStorage.getItem('voluntarios')) || [];
+                    const idx = voluntarios.findIndex(v => v.email === sessao.email);
+                    if (idx !== -1) {
+                        voluntarios[idx].nome = document.getElementById('input-nome').value;
+                        voluntarios[idx].email = document.getElementById('input-email').value;
+                        voluntarios[idx].cidade = document.getElementById('input-localizacao').value;
+                        localStorage.setItem('voluntarios', JSON.stringify(voluntarios));
+                        
+                        // Atualiza no header a sessão atual
+                        sessao.nome = voluntarios[idx].nome;
+                        localStorage.setItem('usuarioLogado', JSON.stringify(sessao));
+                        document.getElementById('nome-usuario-logado').textContent = sessao.nome;
+                    }
+                }
+
+                formInputs.forEach(input => {
+                    input.setAttribute('readonly', 'true');
+                    input.style.backgroundColor = '';
+                    input.style.border = '';
+                });
+            }
+        });
     </script>
 </body>
 
